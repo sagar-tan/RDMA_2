@@ -1,0 +1,15 @@
+2025-12-07 17:44:17 | INFO | dummy_strategy | TrendFollowingStrategy ready. Using pre-calculated SMA_200.
+2025-12-07 17:44:19 | INFO | dummy_strategy | TrendFollowingStrategy ready. Using pre-calculated SMA_200.
+2025-12-07 17:45:00 | INFO | dummy_strategy | TrendFollowingStrategy ready. Using pre-calculated SMA_200.
+2025-12-07 17:45:02 | INFO | dummy_strategy | TrendFollowingStrategy ready. Using pre-calculated SMA_200.
+2025-12-07 17:45:48 | INFO | dummy_strategy | TrendFollowingStrategy ready. Using pre-calculated SMA_200.
+2025-12-07 17:45:50 | INFO | dummy_strategy | TrendFollowingStrategy ready. Using pre-calculated SMA_200.
+2025-12-07 17:49:20 | INFO | dummy_strategy | TrendFollowingStrategy ready. Using pre-calculated SMA_200.
+2025-12-07 17:49:22 | INFO | dummy_strategy | TrendFollowingStrategy ready. Using pre-calculated SMA_200.
+2025-12-07 17:51:46 | INFO | dummy_strategy | TrendFollowingStrategy ready. Using pre-calculated SMA_200.
+2025-12-07 17:51:48 | INFO | dummy_strategy | TrendFollowingStrategy ready. Using pre-calculated SMA_200.
+2025-12-07 17:52:52 | INFO | dummy_strategy | TrendFollowingStrategy ready. Using pre-calculated SMA_200.
+2025-12-07 17:52:54 | INFO | dummy_strategy | TrendFollowingStrategy ready. Using pre-calculated SMA_200.
+2025-12-07 17:57:37 | INFO | mean_reversion | Calculating RSI(14) for Mean Reversion...
+2025-12-07 17:58:23 | INFO | mean_reversion | Calculating RSI_2...
+2025-12-07 17:58:25 | INFO | mean_reversion | Calculating RSI_2...

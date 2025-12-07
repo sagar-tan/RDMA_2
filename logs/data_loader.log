@@ -1,0 +1,11 @@
+2025-12-07 17:44:16 | INFO | data_loader | Downloading SPY data from Yahoo Finance (2000-01-01 to 2025-01-01)...
+2025-12-07 17:44:17 | INFO | data_loader | Calculating Volatility and Regime Features...
+2025-12-07 17:44:17 | INFO | data_loader | Dropped 199 rows due to rolling window initialization.
+2025-12-07 17:44:17 | INFO | data_loader | Saved processed data to C:\Users\tanwa\RDMA_2\data_storage\SPY_processed.csv
+2025-12-07 17:45:00 | INFO | data_loader | Loading SPY data from cache: C:\Users\tanwa\RDMA_2\data_storage\SPY_processed.csv
+2025-12-07 17:45:48 | INFO | data_loader | Loading SPY data from cache: C:\Users\tanwa\RDMA_2\data_storage\SPY_processed.csv
+2025-12-07 17:49:20 | INFO | data_loader | Loading SPY data from cache: C:\Users\tanwa\RDMA_2\data_storage\SPY_processed.csv
+2025-12-07 17:51:46 | INFO | data_loader | Loading SPY data from cache: C:\Users\tanwa\RDMA_2\data_storage\SPY_processed.csv
+2025-12-07 17:52:52 | INFO | data_loader | Loading SPY data from cache: C:\Users\tanwa\RDMA_2\data_storage\SPY_processed.csv
+2025-12-07 17:57:37 | INFO | data_loader | Loading SPY data from cache: C:\Users\tanwa\RDMA_2\data_storage\SPY_processed.csv
+2025-12-07 17:58:23 | INFO | data_loader | Loading SPY data from cache: C:\Users\tanwa\RDMA_2\data_storage\SPY_processed.csv

@@ -38,7 +38,7 @@ class BacktestEngine:
         The Main Event Loop.
         Iterates through history day-by-day, asking each strategy for a signal.
         """
-        logger.info(f"🚀 Starting Benchmark on {len(self.data)} data points...")
+        logger.info(f"Starting Benchmark on {len(self.data)} data points...")
         
         # 1. Training Phase (if applicable)
         # We define a training window (e.g., first 500 days) or train on the fly.

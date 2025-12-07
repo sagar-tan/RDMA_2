@@ -1,0 +1,26 @@
+2025-12-07 17:44:19 | INFO | regime_manager | HMM Fitted. Volatility Means (Unsorted): [0.10864974 0.26148221]
+2025-12-07 17:44:19 | INFO | regime_manager | State Mapping Enforced (Original->Sorted): {np.int64(0): 0, np.int64(1): 1}
+2025-12-07 17:45:02 | INFO | regime_manager | HMM Fitted. Volatility Means (Unsorted): [0.10864974 0.26148221]
+2025-12-07 17:45:02 | INFO | regime_manager | State Mapping Enforced (Original->Sorted): {np.int64(0): 0, np.int64(1): 1}
+2025-12-07 17:45:50 | INFO | regime_manager | HMM Fitted. Volatility Means (Unsorted): [0.10864974 0.26148221]
+2025-12-07 17:45:50 | INFO | regime_manager | State Mapping Enforced (Original->Sorted): {np.int64(0): 0, np.int64(1): 1}
+2025-12-07 17:49:22 | INFO | regime_manager | HMM Fitted & Regimes Pre-calculated.
+2025-12-07 17:49:22 | INFO | regime_manager | State Means: [0.10864974 0.26148221]
+2025-12-07 17:49:22 | INFO | regime_manager | State Map: {np.int64(0): 0, np.int64(1): 1}
+2025-12-07 17:49:22 | INFO | regime_manager | Regime Distribution: {0: 3967, 1: 2123}
+2025-12-07 17:51:48 | INFO | regime_manager | HMM Fitted & Regimes Pre-calculated.
+2025-12-07 17:51:48 | INFO | regime_manager | State Means: [0.10864974 0.26148221]
+2025-12-07 17:51:48 | INFO | regime_manager | State Map: {np.int64(0): 0, np.int64(1): 1}
+2025-12-07 17:51:48 | INFO | regime_manager | Regime Distribution: {0: 3967, 1: 2123}
+2025-12-07 17:52:54 | INFO | regime_manager | HMM Fitted & Regimes Pre-calculated.
+2025-12-07 17:52:54 | INFO | regime_manager | State Means: [0.10864974 0.26148221]
+2025-12-07 17:52:54 | INFO | regime_manager | State Map: {np.int64(0): 0, np.int64(1): 1}
+2025-12-07 17:52:54 | INFO | regime_manager | Regime Distribution: {0: 3967, 1: 2123}
+2025-12-07 17:57:39 | INFO | regime_manager | HMM Fitted & Regimes Pre-calculated.
+2025-12-07 17:57:39 | INFO | regime_manager | State Means: [0.10864974 0.26148221]
+2025-12-07 17:57:39 | INFO | regime_manager | State Map: {np.int64(0): 0, np.int64(1): 1}
+2025-12-07 17:57:39 | INFO | regime_manager | Regime Distribution: {0: 3967, 1: 2123}
+2025-12-07 17:58:25 | INFO | regime_manager | HMM Fitted & Regimes Pre-calculated.
+2025-12-07 17:58:25 | INFO | regime_manager | State Means: [0.10864974 0.26148221]
+2025-12-07 17:58:25 | INFO | regime_manager | State Map: {np.int64(0): 0, np.int64(1): 1}
+2025-12-07 17:58:25 | INFO | regime_manager | Regime Distribution: {0: 3967, 1: 2123}
