@@ -1,68 +1,57 @@
-from abc import ABC, abstractmethod
 import pandas as pd
+from interfaces import BaseStrategy, BaseRegimeDetector
+from utils.logger import setup_logger
 
-class BaseStrategy(ABC):
+logger = setup_logger("strategy_wrapper", "wrapper.log")
+
+class RegimeAwareWrapper(BaseStrategy):
     """
-    The Contract: Any strategy plugged into this framework MUST inherit from this class.
-    This ensures the Backtest Engine knows exactly how to talk to it.
+    The Decorator: Wraps a user-defined strategy with regime-aware logic.
+    
+    Logic:
+    1. Check Market Regime (via Detector).
+    2. If Regime == 0 (Low Volatility/Safe):
+       -> Execute User Strategy (Pass-through).
+    3. If Regime == 1 (High Volatility/Risky):
+       -> Force Cash (Signal 0) OR Short (if configured).
     """
+    
+    def __init__(self, strategy: BaseStrategy, detector: BaseRegimeDetector):
+        self.strategy = strategy
+        self.detector = detector
+        self.name = f"RegimeAware({strategy.get_name()})"
 
-    @abstractmethod
-    def generate_signal(self, row: pd.Series) -> int:
-        """
-        The core logic. Decides what to do for a single day.
-        
-        Args:
-            row (pd.Series): A single row of data (Open, High, Low, Close, Volatility, etc.)
-            
-        Returns:
-            int: The target position signal.
-                 1  = Long (Buy)
-                 0  = Cash (Flat)
-                -1  = Short (Sell) - Optional, can be treated as Cash if unsupported
-        """
-        pass
-
-    @abstractmethod
     def train(self, history: pd.DataFrame):
         """
-        Training logic. 
-        - For Static strategies (e.g., RSI), this can be `pass`.
-        - For ML strategies (e.g., XGBoost), this is where model.fit() happens.
-        
-        Args:
-            history (pd.DataFrame): Historical data available for training.
-                                    Strictly NO look-ahead bias allowed here.
+        Trains both the internal strategy (if ML) and the regime detector.
         """
-        pass
+        logger.info(f"Training Regime Detector and Inner Strategy: {self.strategy.get_name()}")
+        
+        # 1. Fit the Regime Detector (HMM)
+        self.detector.fit(history)
+        
+        # 2. Train the User's Strategy (if it needs training)
+        self.strategy.train(history)
+
+    def generate_signal(self, row: pd.Series) -> int:
+        """
+        Generates the final signal after regime filtering.
+        """
+        # 1. Check the Weather (Regime)
+        regime = self.detector.detect_regime(row)
+        
+        # 2. Get User's Opinion
+        raw_signal = self.strategy.generate_signal(row)
+        
+        # 3. Apply The Filter
+        if regime == 0:
+            # Safe Regime: Trust the strategy
+            return raw_signal
+        else:
+            # Risky Regime: Safety First (Cash)
+            # Note: We return 0 (Cash). 
+            # In V2, you could return -1 (Short) if you wanted "Crisis Alpha".
+            return 0
 
     def get_name(self) -> str:
-        """
-        Returns the class name. Helpful for logging.
-        """
-        return self.__class__.__name__
-
-
-class BaseRegimeDetector(ABC):
-    """
-    The Interface for the "Gatekeeper".
-    Allows us to swap HMM for Changepoint, VIX Threshold, or LLM-based detection easily.
-    """
-
-    @abstractmethod
-    def fit(self, data: pd.DataFrame):
-        """
-        Train the detector (e.g., fit the Gaussian HMM).
-        """
-        pass
-
-    @abstractmethod
-    def detect_regime(self, row: pd.Series) -> int:
-        """
-        Determine the market state for a specific day.
-        
-        Returns:
-            int: 0 = Safe/Calm (Trading Allowed)
-                 1 = Risky/Volatile (Trading Vetoed)
-        """
-        pass
+        return self.name

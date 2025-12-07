@@ -1,7 +1,7 @@
 # main.py
 import config
 from components.data_loader import fetch_and_process_data
-from components.backtester import run_backtest
+from components.backtest_engine import run_backtest
 import matplotlib.pyplot as plt
 import pandas as pd
 
