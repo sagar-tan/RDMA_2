@@ -1,24 +1,54 @@
-# config.py
 from pathlib import Path
 
-# --- Project Paths ---
+# ==========================================
+# 1. PATH CONFIGURATION
+# ==========================================
 BASE_DIR = Path(__file__).parent
 DATA_DIR = BASE_DIR / "data_storage"
 OUTPUT_DIR = BASE_DIR / "output"
+LOG_DIR = BASE_DIR / "logs"
 
-DATA_DIR.mkdir(exist_ok=True)
-OUTPUT_DIR.mkdir(exist_ok=True)
+# Ensure directories exist
+for directory in [DATA_DIR, OUTPUT_DIR, LOG_DIR]:
+    directory.mkdir(exist_ok=True)
 
-# --- Strategy Settings ---
-ASSET_TICKER = "SPY"        # Risk-On Asset
-SAFE_ASSET = "IEF"          # Risk-Off Asset (7-10yr Treasury) or "CASH"
-START_DATE = "2005-01-01"   # Long history covers 2008 crash
+# ==========================================
+# 2. EXPERIMENT SETTINGS
+# ==========================================
+# The asset to run the benchmark on
+ASSET_TICKER = "SPY" 
+
+# Date range for the study (Longer is better for regimes)
+START_DATE = "2000-01-01" 
 END_DATE = "2025-01-01"
 
-# --- Regime Settings ---
-HMM_STATES = 2              # 0 = Calm, 1 = Volatile
-HMM_WINDOW = 252 * 2        # Train HMM on rolling 2 years
-REBALANCE_FREQ = "weekly"   # Check regime weekly to save costs (New!)
+# ==========================================
+# 3. REGIME DETECTION SETTINGS
+# ==========================================
+# Number of hidden states (0=Calm, 1=Volatile)
+HMM_STATES = 2
 
-# --- Costs ---
-TRANSACTION_COST = 0.0005   # 5 bps
+# Rolling window for HMM training (in trading days)
+# 1000 days = approx 4 years. Enough to capture a full cycle.
+HMM_TRAIN_WINDOW = 1000 
+
+# Re-fit frequency (in days) to save computation time
+# 20 = Re-train HMM once a month
+HMM_REFIT_INTERVAL = 20
+
+# ==========================================
+# 4. TRADING FRICTION
+# ==========================================
+# Initial Portfolio Value
+INITIAL_CAPITAL = 10000.0
+
+# Transaction Cost per trade (as a fraction)
+# 0.0005 = 5 basis points (Standard for liquid ETFs)
+# 0.0010 = 10 basis points (Crypto/Small Cap)
+TRANSACTION_COST = 0.0005
+
+# ==========================================
+# 5. ANALYSIS SETTINGS
+# ==========================================
+# Risk-Free Rate for Sharpe Ratio calculation (annualized)
+RISK_FREE_RATE = 0.02
