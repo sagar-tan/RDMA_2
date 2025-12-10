@@ -37,3 +37,13 @@
 2025-12-07 17:58:23 | INFO | main_runner | =================================================
 2025-12-07 17:58:23 | INFO | main_runner | Target Asset: SPY
 2025-12-07 17:58:25 | INFO | main_runner | Chart saved to C:\Users\tanwa\RDMA_2\output\benchmark_chart.png
+2025-12-08 12:47:24 | INFO | main_runner | =================================================
+2025-12-08 12:47:24 | INFO | main_runner |    REGIME-AWARE BENCHMARKING FRAMEWORK v1.0
+2025-12-08 12:47:24 | INFO | main_runner | =================================================
+2025-12-08 12:47:24 | INFO | main_runner | Target Asset: SPY
+2025-12-08 12:47:28 | INFO | main_runner | Chart saved to C:\Users\tanwa\RDMA_2\output\benchmark_chart.png
+2025-12-10 15:01:20 | INFO | main_runner | =================================================
+2025-12-10 15:01:20 | INFO | main_runner |    REGIME-AWARE BENCHMARKING FRAMEWORK v1.0
+2025-12-10 15:01:20 | INFO | main_runner | =================================================
+2025-12-10 15:01:20 | INFO | main_runner | Target Asset: SPY
+2025-12-10 15:01:23 | INFO | main_runner | Chart saved to C:\Users\tanwa\RDMA_2\output\benchmark_chart.png
