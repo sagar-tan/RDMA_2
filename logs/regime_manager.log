@@ -287,3 +287,143 @@
 2026-03-13 13:35:12 | INFO | regime_detectors | State Means: [0.10864974 0.26148221]
 2026-03-13 13:35:12 | INFO | regime_detectors | State Map: {np.int64(0): 0, np.int64(1): 1}
 2026-03-13 13:35:12 | INFO | regime_detectors | Regime Distribution: {0: 3967, 1: 2123}
+2026-03-13 13:37:33 | INFO | regime_detectors | HMM fitted and regimes pre-calculated.
+2026-03-13 13:37:33 | INFO | regime_detectors | State Means: [0.10864974 0.26148221]
+2026-03-13 13:37:33 | INFO | regime_detectors | State Map: {np.int64(0): 0, np.int64(1): 1}
+2026-03-13 13:37:33 | INFO | regime_detectors | Regime Distribution: {0: 3967, 1: 2123}
+2026-03-13 13:37:34 | INFO | regime_detectors | VolatilityThresholdDetector fitted with threshold 0.135671.
+2026-03-13 13:37:34 | INFO | regime_detectors | VolatilityThresholdDetector fitted with threshold 0.135671.
+2026-03-13 13:37:35 | INFO | regime_detectors | DrawdownRegimeDetector fitted with threshold 0.090505.
+2026-03-13 13:37:35 | INFO | regime_detectors | DrawdownRegimeDetector fitted with threshold 0.090505.
+2026-03-13 13:37:36 | INFO | regime_detectors | HMM fitted and regimes pre-calculated.
+2026-03-13 13:37:36 | INFO | regime_detectors | State Means: [0.10864974 0.26148221]
+2026-03-13 13:37:36 | INFO | regime_detectors | State Map: {np.int64(0): 0, np.int64(1): 1}
+2026-03-13 13:37:36 | INFO | regime_detectors | Regime Distribution: {0: 3967, 1: 2123}
+2026-03-13 13:37:37 | INFO | regime_detectors | VolatilityThresholdDetector fitted with threshold 0.135671.
+2026-03-13 13:37:37 | INFO | regime_detectors | VolatilityThresholdDetector fitted with threshold 0.135671.
+2026-03-13 13:37:38 | INFO | regime_detectors | DrawdownRegimeDetector fitted with threshold 0.090505.
+2026-03-13 13:37:38 | INFO | regime_detectors | DrawdownRegimeDetector fitted with threshold 0.090505.
+2026-03-13 13:37:39 | INFO | regime_detectors | HMM fitted and regimes pre-calculated.
+2026-03-13 13:37:39 | INFO | regime_detectors | State Means: [0.10864974 0.26148221]
+2026-03-13 13:37:39 | INFO | regime_detectors | State Map: {np.int64(0): 0, np.int64(1): 1}
+2026-03-13 13:37:39 | INFO | regime_detectors | Regime Distribution: {0: 3967, 1: 2123}
+2026-03-13 13:37:40 | INFO | regime_detectors | VolatilityThresholdDetector fitted with threshold 0.135671.
+2026-03-13 13:37:41 | INFO | regime_detectors | VolatilityThresholdDetector fitted with threshold 0.135671.
+2026-03-13 13:37:41 | INFO | regime_detectors | DrawdownRegimeDetector fitted with threshold 0.090505.
+2026-03-13 13:37:41 | INFO | regime_detectors | DrawdownRegimeDetector fitted with threshold 0.090505.
+2026-03-13 13:37:42 | INFO | regime_detectors | HMM fitted and regimes pre-calculated.
+2026-03-13 13:37:42 | INFO | regime_detectors | State Means: [0.10864974 0.26148221]
+2026-03-13 13:37:42 | INFO | regime_detectors | State Map: {np.int64(0): 0, np.int64(1): 1}
+2026-03-13 13:37:42 | INFO | regime_detectors | Regime Distribution: {0: 3967, 1: 2123}
+2026-03-13 13:37:43 | INFO | regime_detectors | VolatilityThresholdDetector fitted with threshold 0.135671.
+2026-03-13 13:37:44 | INFO | regime_detectors | VolatilityThresholdDetector fitted with threshold 0.135671.
+2026-03-13 13:37:44 | INFO | regime_detectors | DrawdownRegimeDetector fitted with threshold 0.090505.
+2026-03-13 13:37:44 | INFO | regime_detectors | DrawdownRegimeDetector fitted with threshold 0.090505.
+2026-03-13 13:37:45 | INFO | regime_detectors | HMM fitted and regimes pre-calculated.
+2026-03-13 13:37:45 | INFO | regime_detectors | State Means: [0.10864974 0.26148221]
+2026-03-13 13:37:45 | INFO | regime_detectors | State Map: {np.int64(0): 0, np.int64(1): 1}
+2026-03-13 13:37:45 | INFO | regime_detectors | Regime Distribution: {0: 3967, 1: 2123}
+2026-03-13 13:37:46 | INFO | regime_detectors | VolatilityThresholdDetector fitted with threshold 0.135671.
+2026-03-13 13:37:47 | INFO | regime_detectors | VolatilityThresholdDetector fitted with threshold 0.135671.
+2026-03-13 13:37:47 | INFO | regime_detectors | DrawdownRegimeDetector fitted with threshold 0.090505.
+2026-03-13 13:37:47 | INFO | regime_detectors | DrawdownRegimeDetector fitted with threshold 0.090505.
+2026-03-13 13:37:48 | INFO | regime_detectors | HMM fitted and regimes pre-calculated.
+2026-03-13 13:37:48 | INFO | regime_detectors | State Means: [0.10864974 0.26148221]
+2026-03-13 13:37:48 | INFO | regime_detectors | State Map: {np.int64(0): 0, np.int64(1): 1}
+2026-03-13 13:37:48 | INFO | regime_detectors | Regime Distribution: {0: 3967, 1: 2123}
+2026-03-13 13:37:49 | INFO | regime_detectors | VolatilityThresholdDetector fitted with threshold 0.135671.
+2026-03-13 13:37:50 | INFO | regime_detectors | VolatilityThresholdDetector fitted with threshold 0.135671.
+2026-03-13 13:37:50 | INFO | regime_detectors | DrawdownRegimeDetector fitted with threshold 0.090505.
+2026-03-13 13:37:51 | INFO | regime_detectors | DrawdownRegimeDetector fitted with threshold 0.090505.
+2026-03-13 13:37:51 | INFO | regime_detectors | HMM fitted and regimes pre-calculated.
+2026-03-13 13:37:51 | INFO | regime_detectors | State Means: [0.24479742 0.12605669]
+2026-03-13 13:37:51 | INFO | regime_detectors | State Map: {np.int64(1): 0, np.int64(0): 1}
+2026-03-13 13:37:51 | INFO | regime_detectors | Regime Distribution: {0: 3396, 1: 1468}
+2026-03-13 13:37:52 | INFO | regime_detectors | VolatilityThresholdDetector fitted with threshold 0.146191.
+2026-03-13 13:37:52 | INFO | regime_detectors | VolatilityThresholdDetector fitted with threshold 0.146191.
+2026-03-13 13:37:53 | INFO | regime_detectors | DrawdownRegimeDetector fitted with threshold 0.120123.
+2026-03-13 13:37:53 | INFO | regime_detectors | DrawdownRegimeDetector fitted with threshold 0.120123.
+2026-03-13 13:37:54 | INFO | regime_detectors | HMM fitted and regimes pre-calculated.
+2026-03-13 13:37:54 | INFO | regime_detectors | State Means: [0.24479742 0.12605669]
+2026-03-13 13:37:54 | INFO | regime_detectors | State Map: {np.int64(1): 0, np.int64(0): 1}
+2026-03-13 13:37:54 | INFO | regime_detectors | Regime Distribution: {0: 3396, 1: 1468}
+2026-03-13 13:37:54 | INFO | regime_detectors | VolatilityThresholdDetector fitted with threshold 0.146191.
+2026-03-13 13:37:55 | INFO | regime_detectors | VolatilityThresholdDetector fitted with threshold 0.146191.
+2026-03-13 13:37:55 | INFO | regime_detectors | DrawdownRegimeDetector fitted with threshold 0.120123.
+2026-03-13 13:37:56 | INFO | regime_detectors | DrawdownRegimeDetector fitted with threshold 0.120123.
+2026-03-13 13:37:56 | INFO | regime_detectors | HMM fitted and regimes pre-calculated.
+2026-03-13 13:37:56 | INFO | regime_detectors | State Means: [0.24479742 0.12605669]
+2026-03-13 13:37:56 | INFO | regime_detectors | State Map: {np.int64(1): 0, np.int64(0): 1}
+2026-03-13 13:37:56 | INFO | regime_detectors | Regime Distribution: {0: 3396, 1: 1468}
+2026-03-13 13:37:57 | INFO | regime_detectors | VolatilityThresholdDetector fitted with threshold 0.146191.
+2026-03-13 13:37:58 | INFO | regime_detectors | VolatilityThresholdDetector fitted with threshold 0.146191.
+2026-03-13 13:37:58 | INFO | regime_detectors | DrawdownRegimeDetector fitted with threshold 0.120123.
+2026-03-13 13:37:58 | INFO | regime_detectors | DrawdownRegimeDetector fitted with threshold 0.120123.
+2026-03-13 13:37:59 | INFO | regime_detectors | HMM fitted and regimes pre-calculated.
+2026-03-13 13:37:59 | INFO | regime_detectors | State Means: [0.24479742 0.12605669]
+2026-03-13 13:37:59 | INFO | regime_detectors | State Map: {np.int64(1): 0, np.int64(0): 1}
+2026-03-13 13:37:59 | INFO | regime_detectors | Regime Distribution: {0: 3396, 1: 1468}
+2026-03-13 13:38:00 | INFO | regime_detectors | VolatilityThresholdDetector fitted with threshold 0.146191.
+2026-03-13 13:38:00 | INFO | regime_detectors | VolatilityThresholdDetector fitted with threshold 0.146191.
+2026-03-13 13:38:01 | INFO | regime_detectors | DrawdownRegimeDetector fitted with threshold 0.120123.
+2026-03-13 13:38:01 | INFO | regime_detectors | DrawdownRegimeDetector fitted with threshold 0.120123.
+2026-03-13 13:38:02 | INFO | regime_detectors | HMM fitted and regimes pre-calculated.
+2026-03-13 13:38:02 | INFO | regime_detectors | State Means: [0.24479742 0.12605669]
+2026-03-13 13:38:02 | INFO | regime_detectors | State Map: {np.int64(1): 0, np.int64(0): 1}
+2026-03-13 13:38:02 | INFO | regime_detectors | Regime Distribution: {0: 3396, 1: 1468}
+2026-03-13 13:38:02 | INFO | regime_detectors | VolatilityThresholdDetector fitted with threshold 0.146191.
+2026-03-13 13:38:03 | INFO | regime_detectors | VolatilityThresholdDetector fitted with threshold 0.146191.
+2026-03-13 13:38:03 | INFO | regime_detectors | DrawdownRegimeDetector fitted with threshold 0.120123.
+2026-03-13 13:38:04 | INFO | regime_detectors | DrawdownRegimeDetector fitted with threshold 0.120123.
+2026-03-13 13:38:04 | INFO | regime_detectors | HMM fitted and regimes pre-calculated.
+2026-03-13 13:38:04 | INFO | regime_detectors | State Means: [0.24479742 0.12605669]
+2026-03-13 13:38:04 | INFO | regime_detectors | State Map: {np.int64(1): 0, np.int64(0): 1}
+2026-03-13 13:38:04 | INFO | regime_detectors | Regime Distribution: {0: 3396, 1: 1468}
+2026-03-13 13:38:05 | INFO | regime_detectors | VolatilityThresholdDetector fitted with threshold 0.146191.
+2026-03-13 13:38:05 | INFO | regime_detectors | VolatilityThresholdDetector fitted with threshold 0.146191.
+2026-03-13 13:38:06 | INFO | regime_detectors | DrawdownRegimeDetector fitted with threshold 0.120123.
+2026-03-13 13:38:06 | INFO | regime_detectors | DrawdownRegimeDetector fitted with threshold 0.120123.
+2026-03-13 13:38:07 | INFO | regime_detectors | HMM fitted and regimes pre-calculated.
+2026-03-13 13:38:07 | INFO | regime_detectors | State Means: [0.36047562 0.76011306]
+2026-03-13 13:38:07 | INFO | regime_detectors | State Map: {np.int64(0): 0, np.int64(1): 1}
+2026-03-13 13:38:07 | INFO | regime_detectors | Regime Distribution: {0: 2226, 1: 1334}
+2026-03-13 13:38:07 | INFO | regime_detectors | VolatilityThresholdDetector fitted with threshold 0.462866.
+2026-03-13 13:38:08 | INFO | regime_detectors | VolatilityThresholdDetector fitted with threshold 0.462866.
+2026-03-13 13:38:08 | INFO | regime_detectors | DrawdownRegimeDetector fitted with threshold 0.399859.
+2026-03-13 13:38:08 | INFO | regime_detectors | DrawdownRegimeDetector fitted with threshold 0.399859.
+2026-03-13 13:38:09 | INFO | regime_detectors | HMM fitted and regimes pre-calculated.
+2026-03-13 13:38:09 | INFO | regime_detectors | State Means: [0.36047562 0.76011306]
+2026-03-13 13:38:09 | INFO | regime_detectors | State Map: {np.int64(0): 0, np.int64(1): 1}
+2026-03-13 13:38:09 | INFO | regime_detectors | Regime Distribution: {0: 2226, 1: 1334}
+2026-03-13 13:38:09 | INFO | regime_detectors | VolatilityThresholdDetector fitted with threshold 0.462866.
+2026-03-13 13:38:10 | INFO | regime_detectors | VolatilityThresholdDetector fitted with threshold 0.462866.
+2026-03-13 13:38:10 | INFO | regime_detectors | DrawdownRegimeDetector fitted with threshold 0.399859.
+2026-03-13 13:38:10 | INFO | regime_detectors | DrawdownRegimeDetector fitted with threshold 0.399859.
+2026-03-13 13:38:11 | INFO | regime_detectors | HMM fitted and regimes pre-calculated.
+2026-03-13 13:38:11 | INFO | regime_detectors | State Means: [0.36047562 0.76011306]
+2026-03-13 13:38:11 | INFO | regime_detectors | State Map: {np.int64(0): 0, np.int64(1): 1}
+2026-03-13 13:38:11 | INFO | regime_detectors | Regime Distribution: {0: 2226, 1: 1334}
+2026-03-13 13:38:11 | INFO | regime_detectors | VolatilityThresholdDetector fitted with threshold 0.462866.
+2026-03-13 13:38:12 | INFO | regime_detectors | VolatilityThresholdDetector fitted with threshold 0.462866.
+2026-03-13 13:38:12 | INFO | regime_detectors | DrawdownRegimeDetector fitted with threshold 0.399859.
+2026-03-13 13:38:12 | INFO | regime_detectors | DrawdownRegimeDetector fitted with threshold 0.399859.
+2026-03-13 13:38:13 | INFO | regime_detectors | HMM fitted and regimes pre-calculated.
+2026-03-13 13:38:13 | INFO | regime_detectors | State Means: [0.36047562 0.76011306]
+2026-03-13 13:38:13 | INFO | regime_detectors | State Map: {np.int64(0): 0, np.int64(1): 1}
+2026-03-13 13:38:13 | INFO | regime_detectors | Regime Distribution: {0: 2226, 1: 1334}
+2026-03-13 13:38:13 | INFO | regime_detectors | VolatilityThresholdDetector fitted with threshold 0.462866.
+2026-03-13 13:38:14 | INFO | regime_detectors | VolatilityThresholdDetector fitted with threshold 0.462866.
+2026-03-13 13:38:14 | INFO | regime_detectors | DrawdownRegimeDetector fitted with threshold 0.399859.
+2026-03-13 13:38:14 | INFO | regime_detectors | DrawdownRegimeDetector fitted with threshold 0.399859.
+2026-03-13 13:38:15 | INFO | regime_detectors | HMM fitted and regimes pre-calculated.
+2026-03-13 13:38:15 | INFO | regime_detectors | State Means: [0.36047562 0.76011306]
+2026-03-13 13:38:15 | INFO | regime_detectors | State Map: {np.int64(0): 0, np.int64(1): 1}
+2026-03-13 13:38:15 | INFO | regime_detectors | Regime Distribution: {0: 2226, 1: 1334}
+2026-03-13 13:38:16 | INFO | regime_detectors | VolatilityThresholdDetector fitted with threshold 0.462866.
+2026-03-13 13:38:16 | INFO | regime_detectors | VolatilityThresholdDetector fitted with threshold 0.462866.
+2026-03-13 13:38:17 | INFO | regime_detectors | DrawdownRegimeDetector fitted with threshold 0.399859.
+2026-03-13 13:38:17 | INFO | regime_detectors | DrawdownRegimeDetector fitted with threshold 0.399859.
+2026-03-13 13:38:17 | INFO | regime_detectors | HMM fitted and regimes pre-calculated.
+2026-03-13 13:38:17 | INFO | regime_detectors | State Means: [0.36047562 0.76011306]
+2026-03-13 13:38:17 | INFO | regime_detectors | State Map: {np.int64(0): 0, np.int64(1): 1}
+2026-03-13 13:38:17 | INFO | regime_detectors | Regime Distribution: {0: 2226, 1: 1334}
