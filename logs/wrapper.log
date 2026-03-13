@@ -148,3 +148,14 @@
 2026-03-13 13:38:16 | INFO | strategy_wrapper | Training Regime Detector and Inner Strategy: MovingAverageCrossStrategy
 2026-03-13 13:38:17 | INFO | strategy_wrapper | Training Regime Detector and Inner Strategy: MovingAverageCrossStrategy
 2026-03-13 13:38:17 | INFO | strategy_wrapper | Training Regime Detector and Inner Strategy: VolatilityBreakoutStrategy
+2026-03-13 13:38:18 | INFO | strategy_wrapper | Training Regime Detector and Inner Strategy: VolatilityBreakoutStrategy
+2026-03-13 13:38:19 | INFO | strategy_wrapper | Training Regime Detector and Inner Strategy: VolatilityBreakoutStrategy
+2026-03-13 13:38:20 | INFO | strategy_wrapper | Training Regime Detector and Inner Strategy: MeanReversionStrategy
+2026-03-13 13:38:20 | INFO | strategy_wrapper | Training Regime Detector and Inner Strategy: MeanReversionStrategy
+2026-03-13 13:38:21 | INFO | strategy_wrapper | Training Regime Detector and Inner Strategy: MeanReversionStrategy
+2026-03-13 13:38:22 | INFO | strategy_wrapper | Training Regime Detector and Inner Strategy: TrendFollowingStrategy
+2026-03-13 13:38:23 | INFO | strategy_wrapper | Training Regime Detector and Inner Strategy: TrendFollowingStrategy
+2026-03-13 13:38:24 | INFO | strategy_wrapper | Training Regime Detector and Inner Strategy: TrendFollowingStrategy
+2026-03-13 13:38:25 | INFO | strategy_wrapper | Training Regime Detector and Inner Strategy: MomentumStrategy
+2026-03-13 13:38:26 | INFO | strategy_wrapper | Training Regime Detector and Inner Strategy: MomentumStrategy
+2026-03-13 13:38:27 | INFO | strategy_wrapper | Training Regime Detector and Inner Strategy: MomentumStrategy
