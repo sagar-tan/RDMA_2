@@ -56,3 +56,6 @@
 2025-12-27 11:11:19 | INFO | regime_manager | State Means: [0.10864974 0.26148221]
 2025-12-27 11:11:19 | INFO | regime_manager | State Map: {np.int64(0): 0, np.int64(1): 1}
 2025-12-27 11:11:19 | INFO | regime_manager | Regime Distribution: {0: 3967, 1: 2123}
+2026-03-13 12:40:42 | INFO | regime_detectors | VolatilityThresholdDetector fitted with threshold 0.135671.
+2026-03-13 12:40:42 | INFO | regime_detectors | DrawdownRegimeDetector fitted with threshold 0.090505.
+2026-03-13 12:40:42 | INFO | regime_detectors | VolatilityThresholdDetector fitted with threshold 0.135671.

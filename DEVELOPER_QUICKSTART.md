@@ -15,6 +15,7 @@ Its core workflow is:
 The main source areas are:
 
 - `main.py` for script-based benchmarking
+- `benchmark_suite.py` for expanded cross-asset benchmarking
 - `app.py` for the Streamlit UI
 - `components/` for core engine logic
 - `user_strategies/` for trading strategies
@@ -33,8 +34,10 @@ If you are new to the codebase, read files in this order:
 6. `components/backtest_engine.py`
 7. `components/portfolio.py`
 8. `user_strategies/mean_reversion.py`
-9. `main.py`
-10. `app.py`
+9. `components/regime_detectors.py`
+10. `benchmark_suite.py`
+11. `main.py`
+12. `app.py`
 
 ## Core Concepts
 
@@ -83,6 +86,16 @@ python main.py
 
 This runs the built-in benchmark using `MeanReversionStrategy` and its wrapped version.
 
+### Expanded benchmark run
+
+Use:
+
+```bash
+python benchmark_suite.py
+```
+
+This runs the full built-in experiment matrix across assets, strategies, and detectors.
+
 ### Streamlit app
 
 Use:
@@ -113,7 +126,15 @@ Loads cached or downloaded Yahoo Finance data and computes:
 
 ### `components/regime_manager.py`
 
-Defines `VolatilityHMM`, the current HMM-based regime detector.
+Compatibility export layer for the detector classes now implemented in `components/regime_detectors.py`.
+
+### `components/regime_detectors.py`
+
+Defines:
+
+- `VolatilityHMM`
+- `VolatilityThresholdDetector`
+- `DrawdownRegimeDetector`
 
 ### `components/strategy_wrapper.py`
 
@@ -202,6 +223,8 @@ The project writes outputs to:
 - `output/equity_<strategy>.csv`
 - `output/trades_<strategy>.csv`
 - `output/benchmark_chart.png` from `main.py`
+- `output/benchmark_results.csv` from `benchmark_suite.py`
+- `output/regime_overlay_chart.png` from `benchmark_suite.py`
 
 Logs are written under `logs/`.
 
@@ -215,4 +238,4 @@ Logs are written under `logs/`.
 
 ## Best Next Step
 
-If you want to extend the framework seriously, read `PROJECT_IMPLEMENTATION_DOC.md` first and then `docs/extending.md` for extension-focused guidance.
+If you want the run and usage overview first, read `README.md`. For extension details, continue with `PROJECT_IMPLEMENTATION_DOC.md` and `docs/extending.md`.

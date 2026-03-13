@@ -1,4 +1,9 @@
-import yfinance as yf
+# pyright: reportMissingImports=false
+
+try:
+    import yfinance as yf
+except ModuleNotFoundError:
+    yf = None
 import pandas as pd
 import numpy as np
 import config
@@ -21,6 +26,9 @@ def fetch_and_process_data(ticker=config.ASSET_TICKER, force_download=False):
         return df
 
     # 2. Download Data if not cached
+    if yf is None:
+        raise ModuleNotFoundError("Downloading market data requires 'yfinance' to be installed.")
+
     logger.info(f"Downloading {ticker} data from Yahoo Finance ({config.START_DATE} to {config.END_DATE})...")
     df = yf.download(ticker, start=config.START_DATE, end=config.END_DATE, progress=False)
     
