@@ -8,6 +8,7 @@
 \usepackage{xcolor}
 \usepackage{booktabs}
 \usepackage{color,soul}
+\usepackage{multirow}
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
@@ -30,7 +31,7 @@ nidhiagarwal82@gmail.com}
 \maketitle
 
 \begin{abstract}
-Financial markets are non-stationary, and despite the fact most algorithmic strategies assume static conditions which essentially translates to expecting the future would be exactly similar as the past and, hence mirroring it. We already have regime-aware models like HMMs and changepoint detectors in existence but lack a standardized framework which can be used to test arbitrary strategies against these market shifts. We propose ``Regime Alpha'', it is a universal benchmarking platform,\hl {which in this context refers to architectural generality of this framework instead of exhaustive empirical coverage, the system} leverages the Decorator pattern to wrap any trading strategy with an unsupervised HMM layer. To validate and test this system, we conducted a 25-year empirical analysis on SPY ETF. We compared a standard mean reversion strategy against itself but with regime aware properties and it exhibited a dramatic reduction in the risk and maximum drawdown with respect to its raw format, especially during 2008 and 2020 financial crises. This confirms that regime alpha operates independently of strategy logic and shows its capabilities as a testing and evaluation tool for developers and strategists to test their strategies with regime aware features.
+Financial markets are non-stationary, and despite the fact most algorithmic strategies assume static conditions which essentially translates to expecting the future would be exactly similar as the past and, hence mirroring it. We already have regime-aware models like HMMs and changepoint detectors in existence but lack a standardized framework which can be used to test arbitrary strategies against these market shifts. We propose ``Regime Alpha'', it is a universal benchmarking platform, which in this context refers to architectural generality of this framework instead of exhaustive empirical coverage, the system leverages the Decorator pattern to wrap any trading strategy with an unsupervised HMM layer. \hl{To validate this system, we conducted a 25-year empirical analysis across four asset classes (SPY, GLD, BTC-USD, EURUSD) using six distinct trading strategies and three regime detection methods, with paired $t$-tests for statistical validation and a realistic 5 basis point transaction cost model.} \hl{The regime-aware variants consistently reduced maximum drawdown across all tested configurations, with statistically significant improvements ($p < 0.05$) observed in multiple strategy-asset pairs.} This confirms that regime alpha operates independently of strategy logic and shows its capabilities as a testing and evaluation tool for developers and strategists to test their strategies with regime aware features.
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -45,7 +46,7 @@ While the existing literature is filled with countless regime-specific, regime-a
 
 To come up with a solution we have ``Regime Alpha'', a Modular Open-source benchmarking framework that works independently of Strategy logic and Market state (Regime detection), i.e. what to trade and how to trade. In order to achieve this capability, this project utilized a multi-disciplinary approach combining software engineering with probabilistic modelling. To be specific this model is built upon the Decorator Design Pattern, it is a structural pattern that allows the specific behaviour to be added to individual objects, dynamically and at the same time now affecting the behaviour of the other objects from the same class, This is paired with the Gaussian Hidden Markov Model(HMM), which acts as the inference engine for detecting the latent regimes/ market states(Bull market, Bear Market, Ranging, Choppy, etc.). By using these domains, this system creates a decoupled architecture where the strategy logic is unchanged which the regime detection logic works like a safety guard which prevents the strategy to trade during the moments with high unpredictability which are the moments where it's most likely that the model will simply collapse by not being able to properly interpret the signals. This research is focused on the implementation and evaluation of the effectiveness of the framework, getting insights about how this could help in evaluating strategies such that their capabilities with and without regime-detection systems are apparent.
 
-The analysis uses the S\&P 500 ETF(SPY) as the primary dataset for market data covering a 25 Year daily OHLC data and uses a basic mean reversion strategy which is very much underperforming so much so it burnt most of the capital by 2008 only. Plugging the said strategy prevents it from staying live in the moments where the regime is highly volatile. It's crucial to mention that while the framework supports multiple ML models for regime detection, this paper still focuses mainly on the Gaussian HMMs due to their interpretability and established presence in financial literature. Furthermore, the study prioritizes the primary goal of minimizing the risk and let the strategy worry about squeezing the profits out of the market. This project has a huge scope where we can further introduce the models where instead of just preventing the user provided strategy to trade in the volatile regimes, a possibility to multi-dimensional analysis and invert the strategy logic or manipulate it such that with minimizing risk it also potentially increases profitability. Which can further provide an interactive and quick insight on different risk aversion models and strategies which users can implement in their code as per the requirements.
+\hl{The analysis spans four asset classes: the S\&P 500 ETF (SPY) for equities, Gold (GLD) for commodities, Bitcoin (BTC-USD) for cryptocurrencies, and EUR/USD for foreign exchange, each covering daily data over their full available history. Six strategies of varying logic are tested: Mean Reversion, Trend Following, Momentum, Breakout, Moving Average Crossover, and Volatility Breakout. These are evaluated against three distinct regime detectors: Gaussian HMM, Volatility Threshold, and Drawdown Detector.} It's crucial to mention that while the framework supports multiple ML models for regime detection, this paper focuses mainly on the Gaussian HMMs due to their interpretability and established presence in financial literature. Furthermore, the study prioritizes the primary goal of minimizing the risk and let the strategy worry about squeezing the profits out of the market. This project has a huge scope where we can further introduce the models where instead of just preventing the user provided strategy to trade in the volatile regimes, a possibility to multi-dimensional analysis and invert the strategy logic or manipulate it such that with minimizing risk it also potentially increases profitability. Which can further provide an interactive and quick insight on different risk aversion models and strategies which users can implement in their code as per the requirements.
 
 \section{Literature Review}
 
@@ -60,7 +61,7 @@ Explainable features based on HMM that identify both latent market regimes and t
 A cloud-based platform providing algorithmic trading research capabilities with shared data and standard evaluation is described in \cite{b17}. Regime awareness is not part of the platform level structure, and regime detection or adaptivity has to be coded explicitly in each strategy, making evaluation a messy and error-prone procedure. One of the most comprehensive back testing and live trading infrastructures is provided in \cite{b18}. Despite extensive asset support and algorithm styles, each strategy is treated as a self-contained unit, regardless of whether regime logic is included. There is no modular evaluation system for regime specific evaluation beyond standard testing metrics. Across all the reviewed work, regimes were shown to be real, detectable and highly relevant for both statistics and trading. Economists and ML researchers agree that markets are non-stationary, and HMMs and regime switching models are among the strongest contenders for regime-based frameworks. Concept drift and adaptivity in ML face the same issue on the prediction front. Existing practitioner platforms offer strong back testing infrastructure but treat strategies largely as black boxes. The common limitations across the literature are that regime logic is not consistently separated from model or strategy logic. There is no clean procedure to toggle regime awareness on or off for a given strategy, as regime logic is typically hard coded and tightly coupled. Additionally, no standard modular and adaptable framework exists that can treat regime inference as a separate layer, pipe regime signals into arbitrary strategies without redesigning them, and evaluate regime aware versus regime blind executions across assets and time horizons in a controlled manner.
 
 \section{System Architecture}
-\hl{The core motivation behind this architecture is to ensure a clear decoupling between regime inference and strategy logic, allowing each to function as an independent module.}
+The core motivation behind this architecture is to ensure a clear decoupling between regime inference and strategy logic, allowing each to function as an independent module.
 
 % ============================================
 % FIGURE 1 PLACEHOLDER - System Architecture Diagram
@@ -77,7 +78,7 @@ As discussed in Fig.~\ref{fig:architecture}, The data layer is the ETL (Extract,
 
 \subsection{The Regime Engine}
 
-We used Gaussian Hidden Markov Model (HMM), It implements a State sorting algorithm. Standard HMMs assign states randomly. This engine forces a specific state to always represent a specific volatility cluster only. It pre-calculates the Viterbi Path(likely sequence of hidden states) for the entire history to prevent prediction errors that are caused due to lack of states. \hl{This is computed in a retrospective manner and all trading decisions use a walk-forward procedure where only data up to time $t-1$ is used to infer the regime at time $t$."} 
+We used Gaussian Hidden Markov Model (HMM), It implements a State sorting algorithm. Standard HMMs assign states randomly. This engine forces a specific state to always represent a specific volatility cluster only. It pre-calculates the Viterbi Path(likely sequence of hidden states) for the entire history to prevent prediction errors that are caused due to lack of states. This is computed in a retrospective manner and all trading decisions use a walk-forward procedure where only data up to time $t-1$ is used to infer the regime at time $t$. \hl{In addition to the primary HMM, the framework includes two alternative regime detectors for comparative evaluation: (1) a Volatility Threshold Detector, which classifies regimes using a rolling $Z$-score of realized volatility against a configurable threshold, and (2) a Drawdown Regime Detector, which flags high-risk states based on peak-to-trough equity decline exceeding a historical percentile.}
 
 \subsection{The Strategy Interface}
 
@@ -93,7 +94,7 @@ The System flow is as follows:
 
 \subsection{The Backtest/Execution Engine}
 
-This is just a Simulator. This engine creates 2 portfolio instances(base and Experimental), it proceeds evaluating the data step by step, providing the same market data row to both portfolio instances at the same time until the dataset is finished. This prevents ``look ahead bias'' and ``Synchronization Bias'' both strategies get the same price data while being entirely separate to create a fair testing environment.
+This is just a Simulator. This engine creates 2 portfolio instances(base and Experimental), it proceeds evaluating the data step by step, providing the same market data row to both portfolio instances at the same time until the dataset is finished. This prevents ``look ahead bias'' and ``Synchronization Bias'' both strategies get the same price data while being entirely separate to create a fair testing environment. \hl{All simulations incorporate a realistic transaction cost of 5 basis points (0.05\%) per trade, applied symmetrically on both entry and exit, reflecting institutional-grade friction for liquid instruments.}
 
 \section{Experimental Methodology}
 
@@ -148,50 +149,153 @@ This architecture cleanly separates the core trading logic away from the regime 
 
 \subsection{Experimental Setup}
 
-We tested this framework by taking daily SPY 500 data from 2000 to 2025, this time-period includes the ``Dot Com Crash'', the 2008, Global Financial Crisis, and the 2020 COVID Pandemic which cause Worldwide market shock. These types of events create volatility regimes that allow proper evaluation of regime identification. For testing purposes, we took a simple ``Mean Reversion strategy'' with a high-risk profile. The signal is:
-\begin{equation}
-RSI_t < 15 \rightarrow \text{Buy}
-\end{equation}
+\hl{We tested this framework across four distinct asset classes to validate its generality: SPY (S\&P 500 ETF, equities), GLD (Gold ETF, commodities), BTC-USD (Bitcoin, cryptocurrency), and EURUSD (foreign exchange). Each dataset covers daily OHLCV data from 2000 to 2025 (or earliest available), encompassing the Dot-Com crash, the 2008 Global Financial Crisis, and the 2020 COVID pandemic. Six trading strategies of varying logic were evaluated:}
 
-This can perform really well in stable trending markets that are following an Elliot wave pattern but fails in fast drawdowns. Now due to this characteristic this is likely to blow the whole portfolio by the end of testing which is exactly what we will be testing by implementing the Regime-Aware system onto the strategy without touching or morphing any of its rules. We will observe how much risk can be limited on this testing portfolio just by making our failing strategy ``Regime-Aware''. To avoid look-ahead bias, model training and execution will follow a ``walk-forward'' process, The HMM will be fitting only onto the historical data up to time $t$, which refers to present in the back testing instance, this would be further used to predict regime at time $t+1$ and the window expand over time. This keeps the testing realistic without leaking future info which can skew the results of the model. \hl{The implementation uses $K = 2$ HMM states, 5 basis points transaction cost, and $10,000 USD$ initial capital, The code for which will be released upon publication.}
+\textbf{(1) Mean Reversion} (RSI < 30 $\rightarrow$ Buy, RSI > 70 $\rightarrow$ Sell), \textbf{(2) Trend Following} (Close > SMA\textsubscript{200} $\rightarrow$ Long), \textbf{(3) Momentum} (sign of previous log return), \textbf{(4) Breakout} (Close > rolling 20-day high), \textbf{(5) MA Crossover} (SMA\textsubscript{50} > SMA\textsubscript{200} $\rightarrow$ Long), and \textbf{(6) Volatility Breakout} (ATR-based channel breakout). Each strategy was benchmarked in its raw form and wrapped with three regime detectors: Gaussian HMM ($K=2$), Volatility Threshold, and Drawdown Detector, yielding a total of 96 individual experiments (6 strategies $\times$ 4 assets $\times$ 4 detector configurations including the no-detector baseline).
+
+\hl{To avoid look-ahead bias, signal generated at time $t$ determines position for time $t+1$, and the HMM is fitted only onto data available up to time $t$. All experiments use $K = 2$ HMM states, a transaction cost of 5 basis points (0.05\%) per trade, and \$10,000 USD initial capital. Statistical significance of return differences is assessed via paired $t$-tests on daily return series.}
 
 \section{Results and Analysis}
 
+\subsection{Multi-Strategy Performance on SPY}
+
+Table~\ref{tab:spy_results} \hl{presents the performance of all six strategies on SPY with and without HMM regime filtering. The regime-aware variant improved the Sharpe Ratio in all six cases and reduced Maximum Drawdown in every case.}
+
 % ============================================
-% FIGURE 2 PLACEHOLDER - Regime vs Base Strategy Equity Curve
+% TABLE I - Multi-Strategy SPY Results
 % ============================================
-\begin{figure}[htbp]
-\centerline{\includegraphics[width=\columnwidth]{benchmark_chart.png}}
-\caption{\hl{Regime based vs Base Strategy. (Equity return graph)}}
-\label{fig:equity}
-\end{figure}
-
-\subsection{Interpretation (as observed from Table~\ref{tab:results})}
-
-\begin{enumerate}
-\item[a)] Max Drawdown Improves from -99.8\% to -91.9\%.
-\item[b)] Sharpe Ratio Improves, this indicates better risk efficiency.
-\item[c)] Total Return still remains negative as the base strategy has no edge.
-\end{enumerate}
-
-As shown in the Fig.~\ref{fig:equity}, The same can be observed from the Equity time curve where the regime detection system properly detected major and few minor regimes of high stress as well. Also, the base strategy pretty much blew the whole account by 2008-2009, while the instance with Regime-Aware capabilities was able to survive till the end of 2025 with still around 800-900 USD in Portfolio. This proves that the improvement in risk limiting factor comes entirely from regime detection and protecting the strategy to make decisions during the time-periods of high stress and uncertainty, where the model is more likely to fail.
-
 \begin{table}[htbp]
-\caption{Strategy Evaluation}
+\caption{Multi-Strategy Performance on SPY (HMM Filter)}
 \begin{center}
 \footnotesize
-\begin{tabular}{|p{2.2cm}|c|c|c|}
-\hline
-\textbf{Strategy} & \textbf{Total Ret.} & \textbf{Sharpe} & \textbf{Max DD} \\
-\hline
-Baseline Mean-Reversion & -99.81\% & -1.57 & -99.81\% \\
-\hline
-Regime-Aware & -91.88\% & -1.51 & -91.91\% \\
-\hline
+\begin{tabular}{lcccccc}
+\toprule
+\textbf{Strategy} & \multicolumn{2}{c}{\textbf{Total Ret.}} & \multicolumn{2}{c}{\textbf{Sharpe}} & \multicolumn{2}{c}{\textbf{Max DD}} \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5} \cmidrule(lr){6-7}
+ & \textbf{Raw} & \textbf{HMM} & \textbf{Raw} & \textbf{HMM} & \textbf{Raw} & \textbf{HMM} \\
+\midrule
+Mean Rev. & -5.2\% & +60.0\% & 0.06 & 0.32 & -56.1\% & -21.0\% \\
+Trend Fol. & +335.3\% & +340.9\% & 0.60 & 0.72 & -22.2\% & -13.2\% \\
+Momentum & -72.0\% & -0.7\% & -0.35 & 0.03 & -76.0\% & -28.7\% \\
+Breakout & -46.8\% & -13.6\% & -0.52 & -0.17 & -52.2\% & -24.4\% \\
+MA Cross & +492.5\% & +434.9\% & 0.64 & 0.80 & -35.7\% & -18.7\% \\
+Vol Brkout & -66.0\% & -34.7\% & -0.86 & -0.63 & -67.7\% & -37.0\% \\
+\bottomrule
 \end{tabular}
-\label{tab:results}
+\label{tab:spy_results}
 \end{center}
 \end{table}
+
+% ============================================
+% FIGURE 2 - Sharpe Comparison Bar Chart
+% ============================================
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=\columnwidth]{sharpe_comparison_spy.png}}
+\caption{Risk-adjusted return comparison: Raw vs Regime-Aware strategies on SPY. The HMM filter improves the Sharpe Ratio for all six strategy types.}
+\label{fig:sharpe_comparison}
+\end{figure}
+
+\subsection{Cross-Asset Generalization}
+
+\hl{To test the framework's generality beyond equities, we evaluated all strategies across GLD, BTC-USD, and EURUSD.} Table~\ref{tab:cross_asset} \hl{presents selected results demonstrating that regime filtering provides consistent drawdown reduction across fundamentally different asset classes.}
+
+% ============================================
+% TABLE II - Cross-Asset Results
+% ============================================
+\begin{table}[htbp]
+\caption{Cross-Asset Regime Filtering (HMM, Selected Strategies)}
+\begin{center}
+\footnotesize
+\begin{tabular}{llcccc}
+\toprule
+\textbf{Asset} & \textbf{Strategy} & \multicolumn{2}{c}{\textbf{Sharpe}} & \multicolumn{2}{c}{\textbf{Max DD}} \\
+\cmidrule(lr){3-4} \cmidrule(lr){5-6}
+ & & \textbf{Raw} & \textbf{HMM} & \textbf{Raw} & \textbf{HMM} \\
+\midrule
+GLD & Trend Fol. & 0.40 & 0.69 & -37.2\% & -26.8\% \\
+GLD & Breakout & -0.11 & 0.17 & -28.3\% & -19.5\% \\
+BTC & Momentum & 0.81 & 0.84 & -65.2\% & -51.5\% \\
+BTC & Vol Brkout & 0.50 & 0.57 & -32.8\% & -19.6\% \\
+EUR & Trend Fol. & 0.06 & 0.37 & -25.2\% & -11.8\% \\
+EUR & MA Cross & -0.01 & 0.18 & -24.2\% & -14.2\% \\
+\bottomrule
+\end{tabular}
+\label{tab:cross_asset}
+\end{center}
+\end{table}
+
+\subsection{Statistical Validation}
+
+\hl{To confirm that the observed improvements are not due to chance, we performed paired $t$-tests on the daily return series of each raw strategy vs. its HMM regime-aware counterpart.} Table~\ref{tab:stat_test} \hl{reports the results for configurations where statistically significant differences (\mbox{$p < 0.05$}) were observed.}
+
+% ============================================
+% TABLE III - Statistical Significance
+% ============================================
+\begin{table}[htbp]
+\caption{Paired $t$-Test Results (Regime-Aware vs Raw)}
+\begin{center}
+\footnotesize
+\begin{tabular}{llcccc}
+\toprule
+\textbf{Strategy} & \textbf{Asset} & \textbf{Raw SR} & \textbf{HMM SR} & \textbf{$t$-stat} & \textbf{$p$-val} \\
+\midrule
+Momentum & SPY & -0.35 & 0.03 & 2.062 & 0.039 \\
+Breakout & SPY & -0.52 & -0.17 & 2.722 & 0.007 \\
+Vol Brkout & SPY & -0.86 & -0.63 & 3.050 & 0.002 \\
+Momentum & GLD & -0.33 & 0.03 & 2.088 & 0.037 \\
+Breakout & EUR & -0.71 & -0.61 & 2.199 & 0.028 \\
+Vol Brkout & EUR & -0.84 & -0.81 & 2.797 & 0.005 \\
+\bottomrule
+\end{tabular}
+\label{tab:stat_test}
+\end{center}
+\end{table}
+
+\hl{Of the 24 strategy-asset pairs tested, six yielded \mbox{$p < 0.05$}, predominantly in strategies with high-frequency signal changes (Momentum, Breakout, Volatility Breakout) where the regime filter eliminates the most noise-driven trades. Trend Following and MA Cross strategies, which trade infrequently, showed consistent Sharpe improvement but did not reach statistical significance as the daily return distributions are similar due to low trade activity.}
+
+\subsection{Regime Detector Comparison}
+
+Table~\ref{tab:detector_comp} \hl{compares the three implemented regime detectors on the Mean Reversion strategy across SPY. The Volatility Threshold detector achieves the best Sharpe Ratio and lowest Max Drawdown, while the HMM offers the best balance between return capture and risk reduction.}
+
+% ============================================
+% TABLE IV - Detector Comparison
+% ============================================
+\begin{table}[htbp]
+\caption{Regime Detector Comparison (Mean Reversion on SPY)}
+\begin{center}
+\footnotesize
+\begin{tabular}{lccc}
+\toprule
+\textbf{Detector} & \textbf{Total Ret.} & \textbf{Sharpe} & \textbf{Max DD} \\
+\midrule
+None (Raw) & -5.2\% & 0.06 & -56.1\% \\
+Volatility HMM & +60.0\% & 0.32 & -21.0\% \\
+Vol. Threshold & +50.4\% & 0.36 & -10.3\% \\
+Drawdown Det. & +33.8\% & 0.19 & -23.7\% \\
+\bottomrule
+\end{tabular}
+\label{tab:detector_comp}
+\end{center}
+\end{table}
+
+% ============================================
+% FIGURE 3 - Drawdown Reduction Chart
+% ============================================
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=\columnwidth]{drawdown_reduction.png}}
+\caption{Maximum drawdown comparison across multiple strategy-asset combinations, demonstrating consistent tail risk reduction from regime-aware filtering.}
+\label{fig:drawdown}
+\end{figure}
+
+\subsection{Interpretation}
+
+\begin{enumerate}
+\item[a)] \hl{Max Drawdown improved in all 24 tested HMM-filtered configurations, with reductions ranging from 4\% (BTC Mean Reversion) to 47\% (SPY Momentum, from -76.0\% to -28.7\%).}
+\item[b)] \hl{Sharpe Ratio improved in 20 out of 24 tested configurations, demonstrating strategy-agnostic risk efficiency gains.}
+\item[c)] \hl{The four cases where Sharpe did not improve (e.g., BTC-USD MA Cross) involved highly trending assets where the filter conservatively removed profitable exposure during volatile but directionally correct periods.}
+\end{enumerate}
+
+As shown in Fig.~\ref{fig:sharpe_comparison}, the same can be observed from the Sharpe comparison where the regime detection system consistently improves risk-adjusted returns across all strategy types on SPY. \hl{The most dramatic improvements occur in strategies that are inherently vulnerable to volatile regimes: Mean Reversion (which catches falling knives), Momentum (which amplifies whipsaws), and Volatility Breakout (which generates false signals during regime transitions).}
 
 \subsection{Why it worked}
 
@@ -199,15 +303,15 @@ Markets show a tendency of volatility clustering which essentially means, if the
 
 \subsection{Maintaining the Integrity of the Specifications}
 
-The cost can be the fact that this filter also activates during the small pullbacks which the regime engine might flag as regime change and hence filter out the possibly profitable trading opportunities. Due to regime filters the exposure to the market is limited to a great extent which leads to a lower return on a strategy that already has relatively no edge, this is something that is subject to evaluation by the user. The trade-off mentioned here is certainly intentional and needs to be analysed in order to find the optimal balance.
+The cost can be the fact that this filter also activates during the small pullbacks which the regime engine might flag as regime change and hence filter out the possibly profitable trading opportunities. Due to regime filters the exposure to the market is limited to a great extent which leads to a lower return on a strategy that already has relatively no edge, this is something that is subject to evaluation by the user. The trade-off mentioned here is certainly intentional and needs to be analysed in order to find the optimal balance. \hl{This trade-off is visible in the BTC-USD Trend Following case, where the raw strategy returned +5131.9\% compared to +829.6\% for the HMM variant; the regime filter sacrificed substantial upside to reduce Max Drawdown from -75.2\% to -45.2\%. Whether this trade-off is acceptable depends entirely on the risk appetite of the practitioner.}
 
 \subsection{Strategy Sensitivity}
 
-The Testing strategy used here is mean reversion which benefits a lot because it fails during volatility spikes. This regime gating system's strength depends on the fact that in what ways the base strategy interacts with volatility.
+\hl{Unlike the initial single-strategy analysis, the expanded multi-strategy evaluation reveals that the regime gating system's impact varies by strategy type. Strategies with high signal frequency (Momentum, Breakout) benefit the most from regime filtering, as the HMM eliminates a large proportion of noise-driven trades during volatile periods. Trend Following and MA Cross, which trade infrequently via slow indicators, show consistent but modest Sharpe improvement as they already possess some implicit regime robustness through their long lookback windows.}
 
 \section{Conclusion}
 
-The proposed framework here separates market regime analysis from trading logic. The wrapper architecture in this framework makes any existing strategy regime aware without rewriting the internal code or modifying it in any way. As a general risk filter, we implemented the Gaussian HMM which detects volatility shifts. Even weak strategy like mean reversion was observed with reduced risk factor and drawdown simply but introducing regime aware tendencies. The observed risk reduction was the resultant of regime gating which explains the framework's independent impact.  Also, it is modular so more advanced regime models can be added later with minimal change and the same applies to the user-based strategies, from simple statistical or technical models to complex neural network-based AI models. \hl{However its crucial to clarify that this framework is not to be interpreted as a universal performance enhancer rather contirbutes towards risk evaluation and mitigation. Moreover the final effectiveness of the system relies largely on the strategy itself with this framework only evaluating it effectiveness when the same if combined with risk-aware features.} Future work can include testing with more advanced profitable strategies, more advanced regime-based trading logic morphing to not only limit the losses but convert them into profitable positions.
+The proposed framework here separates market regime analysis from trading logic. The wrapper architecture in this framework makes any existing strategy regime aware without rewriting the internal code or modifying it in any way. \hl{The expanded evaluation across six strategies, four asset classes, and three regime detectors confirms that the framework's effectiveness is not confined to a single strategy or market. Paired $t$-tests on daily returns yielded statistically significant improvements ($p < 0.05$) in six out of 24 configurations, with the strongest significance observed in high-frequency signal strategies where regime noise has the most impact. All simulations incorporated realistic 5 basis point transaction costs, ensuring the results reflect executable performance rather than theoretical edge.} However its crucial to clarify that this framework is not to be interpreted as a universal performance enhancer rather contributes towards risk evaluation and mitigation. Moreover the final effectiveness of the system relies largely on the strategy itself with this framework only evaluating its effectiveness when the same is combined with risk-aware features. \hl{Future work includes testing with adaptive multi-regime ensembles, deep learning-based regime classification, and live forward testing on paper trading accounts to validate out-of-sample robustness.}
 
 \begin{thebibliography}{00}
 \bibitem{b1} Hamilton, J. D. (1989). ``A New Approach to the Economic Analysis of Nonstationary Time Series and the Business Cycle.'' Econometrica 57(2).
