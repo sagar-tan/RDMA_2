@@ -3,7 +3,12 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import importlib.util
 import sys
+import os
+import logging
 from pathlib import Path
+from utils.logger import setup_logger
+
+logger = setup_logger("app_ui", "ui.log")
 
 # Import your framework components
 import config
@@ -31,28 +36,39 @@ start_date = st.sidebar.date_input("Start Date", pd.to_datetime("2000-01-01"))
 # --- HELPER: DYNAMIC IMPORT ---
 def load_strategy_from_file(uploaded_file):
     """
-    Magically imports a class from an uploaded Python file.
+    Dynamically load a strategy from an uploaded .py file.
+    Ensures fresh load by clearing sys.modules cache.
     """
-    try:
-        # Save temp file
-        file_path = Path("user_strategies") / "temp_strategy.py"
-        with open(file_path, "wb") as f:
+    if uploaded_file is not None:
+        # Save to a fixed temporary file with absolute path
+        abs_dir = os.path.dirname(os.path.abspath(__file__))
+        temp_dir = os.path.join(abs_dir, "user_strategies")
+        os.makedirs(temp_dir, exist_ok=True)
+        temp_path = os.path.join(temp_dir, "temp_strategy.py")
+        
+        with open(temp_path, "wb") as f:
             f.write(uploaded_file.getbuffer())
-        
-        # Dynamic Import logic
-        spec = importlib.util.spec_from_file_location("temp_module", file_path)
-        module = importlib.util.module_from_spec(spec)
-        sys.modules["temp_module"] = module
-        spec.loader.exec_module(module)
-        
-        # Find the class that inherits from BaseStrategy
-        for name, obj in module.__dict__.items():
-            if isinstance(obj, type) and issubclass(obj, BaseStrategy) and obj is not BaseStrategy:
-                return obj() # Return an instance
-        return None
-    except Exception as e:
-        st.error(f"Error loading strategy: {e}")
-        return None
+
+        # Clear from sys.modules to force a fresh import
+        module_name = "user_strategies.temp_strategy"
+        if module_name in sys.modules:
+            del sys.modules[module_name]
+
+        try:
+            # Dynamic Import logic
+            spec = importlib.util.spec_from_file_location(module_name, temp_path)
+            module = importlib.util.module_from_spec(spec)
+            spec.loader.exec_module(module)
+
+            # Find the class that inherits from BaseStrategy
+            for name, obj in module.__dict__.items():
+                if isinstance(obj, type) and issubclass(obj, BaseStrategy) and obj != BaseStrategy:
+                    return obj()
+        except Exception as e:
+            st.error(f"Failed to load strategy: {e}")
+            logger.error(f"Strategy load error: {e}")
+            
+    return None
 
 # --- MAIN LOGIC ---
 uploaded_file = st.sidebar.file_uploader("Upload Strategy (.py)", type=["py"])

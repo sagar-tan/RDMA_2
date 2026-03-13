@@ -199,3 +199,84 @@
 2026-03-13 13:17:33 | INFO | momentum_strategy | MomentumStrategy ready using previous log return sign.
 2026-03-13 13:17:45 | INFO | dummy_strategy | TrendFollowingStrategy ready. Using pre-calculated SMA_200.
 2026-03-13 13:17:45 | INFO | dummy_strategy | TrendFollowingStrategy ready. Using pre-calculated SMA_200.
+2026-03-13 13:35:11 | INFO | mean_reversion | Calculating RSI(14) for Mean Reversion...
+2026-03-13 13:37:31 | INFO | mean_reversion | Calculating RSI(14) for Mean Reversion...
+2026-03-13 13:37:31 | INFO | mean_reversion | Calculating RSI(14) for Mean Reversion...
+2026-03-13 13:37:34 | INFO | mean_reversion | Calculating RSI(14) for Mean Reversion...
+2026-03-13 13:37:35 | INFO | mean_reversion | Calculating RSI(14) for Mean Reversion...
+2026-03-13 13:37:35 | INFO | dummy_strategy | TrendFollowingStrategy ready. Using pre-calculated SMA_200.
+2026-03-13 13:37:36 | INFO | dummy_strategy | TrendFollowingStrategy ready. Using pre-calculated SMA_200.
+2026-03-13 13:37:36 | INFO | dummy_strategy | TrendFollowingStrategy ready. Using pre-calculated SMA_200.
+2026-03-13 13:37:37 | INFO | dummy_strategy | TrendFollowingStrategy ready. Using pre-calculated SMA_200.
+2026-03-13 13:37:37 | INFO | dummy_strategy | TrendFollowingStrategy ready. Using pre-calculated SMA_200.
+2026-03-13 13:37:38 | INFO | dummy_strategy | TrendFollowingStrategy ready. Using pre-calculated SMA_200.
+2026-03-13 13:37:38 | INFO | dummy_strategy | TrendFollowingStrategy ready. Using pre-calculated SMA_200.
+2026-03-13 13:37:38 | INFO | momentum_strategy | MomentumStrategy ready using previous log return sign.
+2026-03-13 13:37:39 | INFO | momentum_strategy | MomentumStrategy ready using previous log return sign.
+2026-03-13 13:37:39 | INFO | momentum_strategy | MomentumStrategy ready using previous log return sign.
+2026-03-13 13:37:40 | INFO | momentum_strategy | MomentumStrategy ready using previous log return sign.
+2026-03-13 13:37:40 | INFO | momentum_strategy | MomentumStrategy ready using previous log return sign.
+2026-03-13 13:37:41 | INFO | momentum_strategy | MomentumStrategy ready using previous log return sign.
+2026-03-13 13:37:41 | INFO | momentum_strategy | MomentumStrategy ready using previous log return sign.
+2026-03-13 13:37:42 | INFO | breakout_strategy | BreakoutStrategy ready using RollingHigh20.
+2026-03-13 13:37:42 | INFO | breakout_strategy | BreakoutStrategy ready using RollingHigh20.
+2026-03-13 13:37:42 | INFO | breakout_strategy | BreakoutStrategy ready using RollingHigh20.
+2026-03-13 13:37:43 | INFO | breakout_strategy | BreakoutStrategy ready using RollingHigh20.
+2026-03-13 13:37:43 | INFO | breakout_strategy | BreakoutStrategy ready using RollingHigh20.
+2026-03-13 13:37:44 | INFO | breakout_strategy | BreakoutStrategy ready using RollingHigh20.
+2026-03-13 13:37:44 | INFO | breakout_strategy | BreakoutStrategy ready using RollingHigh20.
+2026-03-13 13:37:45 | INFO | ma_cross_strategy | MovingAverageCrossStrategy ready using SMA_50 and SMA_200.
+2026-03-13 13:37:45 | INFO | ma_cross_strategy | MovingAverageCrossStrategy ready using SMA_50 and SMA_200.
+2026-03-13 13:37:45 | INFO | ma_cross_strategy | MovingAverageCrossStrategy ready using SMA_50 and SMA_200.
+2026-03-13 13:37:46 | INFO | ma_cross_strategy | MovingAverageCrossStrategy ready using SMA_50 and SMA_200.
+2026-03-13 13:37:46 | INFO | ma_cross_strategy | MovingAverageCrossStrategy ready using SMA_50 and SMA_200.
+2026-03-13 13:37:47 | INFO | ma_cross_strategy | MovingAverageCrossStrategy ready using SMA_50 and SMA_200.
+2026-03-13 13:37:47 | INFO | ma_cross_strategy | MovingAverageCrossStrategy ready using SMA_50 and SMA_200.
+2026-03-13 13:37:48 | INFO | volatility_breakout_strategy | VolatilityBreakoutStrategy ready using ATR14.
+2026-03-13 13:37:48 | INFO | volatility_breakout_strategy | VolatilityBreakoutStrategy ready using ATR14.
+2026-03-13 13:37:48 | INFO | volatility_breakout_strategy | VolatilityBreakoutStrategy ready using ATR14.
+2026-03-13 13:37:49 | INFO | volatility_breakout_strategy | VolatilityBreakoutStrategy ready using ATR14.
+2026-03-13 13:37:49 | INFO | volatility_breakout_strategy | VolatilityBreakoutStrategy ready using ATR14.
+2026-03-13 13:37:50 | INFO | volatility_breakout_strategy | VolatilityBreakoutStrategy ready using ATR14.
+2026-03-13 13:37:50 | INFO | volatility_breakout_strategy | VolatilityBreakoutStrategy ready using ATR14.
+2026-03-13 13:37:51 | INFO | mean_reversion | Calculating RSI(14) for Mean Reversion...
+2026-03-13 13:37:51 | INFO | mean_reversion | Calculating RSI(14) for Mean Reversion...
+2026-03-13 13:37:52 | INFO | mean_reversion | Calculating RSI(14) for Mean Reversion...
+2026-03-13 13:37:53 | INFO | mean_reversion | Calculating RSI(14) for Mean Reversion...
+2026-03-13 13:37:53 | INFO | dummy_strategy | TrendFollowingStrategy ready. Using pre-calculated SMA_200.
+2026-03-13 13:37:54 | INFO | dummy_strategy | TrendFollowingStrategy ready. Using pre-calculated SMA_200.
+2026-03-13 13:37:54 | INFO | dummy_strategy | TrendFollowingStrategy ready. Using pre-calculated SMA_200.
+2026-03-13 13:37:54 | INFO | dummy_strategy | TrendFollowingStrategy ready. Using pre-calculated SMA_200.
+2026-03-13 13:37:54 | INFO | dummy_strategy | TrendFollowingStrategy ready. Using pre-calculated SMA_200.
+2026-03-13 13:37:55 | INFO | dummy_strategy | TrendFollowingStrategy ready. Using pre-calculated SMA_200.
+2026-03-13 13:37:55 | INFO | dummy_strategy | TrendFollowingStrategy ready. Using pre-calculated SMA_200.
+2026-03-13 13:37:56 | INFO | momentum_strategy | MomentumStrategy ready using previous log return sign.
+2026-03-13 13:37:56 | INFO | momentum_strategy | MomentumStrategy ready using previous log return sign.
+2026-03-13 13:37:56 | INFO | momentum_strategy | MomentumStrategy ready using previous log return sign.
+2026-03-13 13:37:57 | INFO | momentum_strategy | MomentumStrategy ready using previous log return sign.
+2026-03-13 13:37:57 | INFO | momentum_strategy | MomentumStrategy ready using previous log return sign.
+2026-03-13 13:37:58 | INFO | momentum_strategy | MomentumStrategy ready using previous log return sign.
+2026-03-13 13:37:58 | INFO | momentum_strategy | MomentumStrategy ready using previous log return sign.
+2026-03-13 13:37:59 | INFO | breakout_strategy | BreakoutStrategy ready using RollingHigh20.
+2026-03-13 13:37:59 | INFO | breakout_strategy | BreakoutStrategy ready using RollingHigh20.
+2026-03-13 13:37:59 | INFO | breakout_strategy | BreakoutStrategy ready using RollingHigh20.
+2026-03-13 13:38:00 | INFO | breakout_strategy | BreakoutStrategy ready using RollingHigh20.
+2026-03-13 13:38:00 | INFO | breakout_strategy | BreakoutStrategy ready using RollingHigh20.
+2026-03-13 13:38:01 | INFO | breakout_strategy | BreakoutStrategy ready using RollingHigh20.
+2026-03-13 13:38:01 | INFO | breakout_strategy | BreakoutStrategy ready using RollingHigh20.
+2026-03-13 13:38:01 | INFO | ma_cross_strategy | MovingAverageCrossStrategy ready using SMA_50 and SMA_200.
+2026-03-13 13:38:02 | INFO | ma_cross_strategy | MovingAverageCrossStrategy ready using SMA_50 and SMA_200.
+2026-03-13 13:38:02 | INFO | ma_cross_strategy | MovingAverageCrossStrategy ready using SMA_50 and SMA_200.
+2026-03-13 13:38:02 | INFO | ma_cross_strategy | MovingAverageCrossStrategy ready using SMA_50 and SMA_200.
+2026-03-13 13:38:02 | INFO | ma_cross_strategy | MovingAverageCrossStrategy ready using SMA_50 and SMA_200.
+2026-03-13 13:38:03 | INFO | ma_cross_strategy | MovingAverageCrossStrategy ready using SMA_50 and SMA_200.
+2026-03-13 13:38:03 | INFO | ma_cross_strategy | MovingAverageCrossStrategy ready using SMA_50 and SMA_200.
+2026-03-13 13:38:04 | INFO | volatility_breakout_strategy | VolatilityBreakoutStrategy ready using ATR14.
+2026-03-13 13:38:04 | INFO | volatility_breakout_strategy | VolatilityBreakoutStrategy ready using ATR14.
+2026-03-13 13:38:04 | INFO | volatility_breakout_strategy | VolatilityBreakoutStrategy ready using ATR14.
+2026-03-13 13:38:05 | INFO | volatility_breakout_strategy | VolatilityBreakoutStrategy ready using ATR14.
+2026-03-13 13:38:05 | INFO | volatility_breakout_strategy | VolatilityBreakoutStrategy ready using ATR14.
+2026-03-13 13:38:06 | INFO | volatility_breakout_strategy | VolatilityBreakoutStrategy ready using ATR14.
+2026-03-13 13:38:06 | INFO | volatility_breakout_strategy | VolatilityBreakoutStrategy ready using ATR14.
+2026-03-13 13:38:06 | INFO | mean_reversion | Calculating RSI(14) for Mean Reversion...
+2026-03-13 13:38:07 | INFO | mean_reversion | Calculating RSI(14) for Mean Reversion...

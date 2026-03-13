@@ -95,3 +95,4 @@
 2026-03-13 13:17:24 | INFO | strategy_wrapper | Training Regime Detector and Inner Strategy: MomentumStrategy
 2026-03-13 13:17:33 | INFO | strategy_wrapper | Training Regime Detector and Inner Strategy: MomentumStrategy
 2026-03-13 13:17:45 | INFO | strategy_wrapper | Training Regime Detector and Inner Strategy: TrendFollowingStrategy
+2026-03-13 13:35:11 | INFO | strategy_wrapper | Training Regime Detector and Inner Strategy: MeanReversionStrategy
