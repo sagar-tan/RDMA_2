@@ -48,3 +48,11 @@
 2025-12-10 15:04:27 | INFO | regime_manager | State Means: [0.10864974 0.26148221]
 2025-12-10 15:04:27 | INFO | regime_manager | State Map: {np.int64(0): 0, np.int64(1): 1}
 2025-12-10 15:04:27 | INFO | regime_manager | Regime Distribution: {0: 3967, 1: 2123}
+2025-12-13 10:10:39 | INFO | regime_manager | HMM Fitted & Regimes Pre-calculated.
+2025-12-13 10:10:39 | INFO | regime_manager | State Means: [0.10836563 0.10905287 0.2616797 ]
+2025-12-13 10:10:39 | INFO | regime_manager | State Map: {np.int64(0): 0, np.int64(1): 1, np.int64(2): 2}
+2025-12-13 10:10:39 | INFO | regime_manager | Regime Distribution: {2: 2124, 1: 1997, 0: 1969}
+2025-12-27 11:11:19 | INFO | regime_manager | HMM Fitted & Regimes Pre-calculated.
+2025-12-27 11:11:19 | INFO | regime_manager | State Means: [0.10864974 0.26148221]
+2025-12-27 11:11:19 | INFO | regime_manager | State Map: {np.int64(0): 0, np.int64(1): 1}
+2025-12-27 11:11:19 | INFO | regime_manager | Regime Distribution: {0: 3967, 1: 2123}
