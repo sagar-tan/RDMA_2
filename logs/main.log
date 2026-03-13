@@ -56,3 +56,8 @@
 2026-03-13 12:52:43 | INFO | main_runner |    REGIME-AWARE BENCHMARKING FRAMEWORK v1.0
 2026-03-13 12:52:43 | INFO | main_runner | =================================================
 2026-03-13 12:52:43 | INFO | main_runner | Target Asset: SPY
+2026-03-13 12:58:08 | INFO | main_runner | =================================================
+2026-03-13 12:58:08 | INFO | main_runner |    REGIME-AWARE BENCHMARKING FRAMEWORK v1.0
+2026-03-13 12:58:08 | INFO | main_runner | =================================================
+2026-03-13 12:58:08 | INFO | main_runner | Target Asset: SPY
+2026-03-13 12:58:12 | INFO | main_runner | Chart saved to C:\Users\tw_strat\RDMA_2\output\benchmark_chart.png

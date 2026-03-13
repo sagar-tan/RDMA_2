@@ -56,22 +56,8 @@ class MeanReversionStrategy(BaseStrategy):
         elif rsi > self.sell_threshold:
             return 0 # Sell the rip!
         else:
-            # Hold previous position? 
-            # For simplicity in this backtester, let's say "Stay in Cash" if neutral
-            # OR better: this framework is stateless between calls unless we check portfolio.
-            # Let's simple "Long if < 30, Cash if > 70". 
-            # What about between 30 and 70? 
-            # Let's assume we hold if we are already long, but we don't have state here.
-            # To make it robust:
-            # If RSI < 50, bias Long? No that's Trend.
-            
-            # STRICT VERSION: Only hold if oversold.
-            # This is very restrictive.
-            
-            # STATEFUL VERSION (Simulated):
-            # We assume "1" means "I want to be Long".
-            # Usually Mean Reversion enters at 30 and exits at 70.
-            # Since we can't see current position easily in this method (stateless),
-            # Let's implement a simpler "Contrarian" logic:
-            # If Price < SMA(20) -> Buy. (Expect bounce to mean).
+            # We don't have state here to 'hold', so we return 0 (Cash) if not in a dip.
+            # However, many MR strategies hold until the exit threshold.
+            # For simplicity in this stateless implementation, we return 0 if not < buy_threshold.
+            # To make it better, we could check if it's below the middle point.
             return 1 if rsi < 50 else 0

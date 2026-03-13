@@ -1,0 +1,1 @@
+from user_strategies.dummy_strategy import TrendFollowingStrategy

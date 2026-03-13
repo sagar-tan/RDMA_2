@@ -18,3 +18,124 @@
 2025-12-13 10:10:36 | INFO | data_loader | Loading SPY data from cache: C:\Users\tanwa\RDMA_2\data_storage\SPY_processed.csv
 2025-12-27 11:11:16 | INFO | data_loader | Loading SPY data from cache: C:\Users\tanwa\RDMA_2\data_storage\SPY_processed.csv
 2026-03-13 12:52:43 | INFO | data_loader | Loading SPY data from cache: C:\Users\tw_strat\RDMA_2\data_storage\SPY_processed.csv
+2026-03-13 12:58:08 | INFO | data_loader | Loading SPY data from cache: C:\Users\tw_strat\RDMA_2\data_storage\SPY_processed.csv
+2026-03-13 13:01:48 | INFO | data_loader | Loading SPY data from cache: C:\Users\tw_strat\RDMA_2\data_storage\SPY_processed.csv
+2026-03-13 13:02:21 | INFO | data_loader | Loading SPY data from cache: C:\Users\tw_strat\RDMA_2\data_storage\SPY_processed.csv
+2026-03-13 13:02:31 | INFO | data_loader | Loading SPY data from cache: C:\Users\tw_strat\RDMA_2\data_storage\SPY_processed.csv
+2026-03-13 13:02:39 | INFO | data_loader | Loading SPY data from cache: C:\Users\tw_strat\RDMA_2\data_storage\SPY_processed.csv
+2026-03-13 13:02:46 | INFO | data_loader | Loading SPY data from cache: C:\Users\tw_strat\RDMA_2\data_storage\SPY_processed.csv
+2026-03-13 13:11:26 | INFO | data_loader | Loading SPY data from cache: C:\Users\tw_strat\RDMA_2\data_storage\SPY_processed.csv
+2026-03-13 13:11:26 | INFO | data_loader | Loading SPY data from cache: C:\Users\tw_strat\RDMA_2\data_storage\SPY_processed.csv
+2026-03-13 13:11:29 | INFO | data_loader | Loading SPY data from cache: C:\Users\tw_strat\RDMA_2\data_storage\SPY_processed.csv
+2026-03-13 13:11:29 | INFO | data_loader | Loading SPY data from cache: C:\Users\tw_strat\RDMA_2\data_storage\SPY_processed.csv
+2026-03-13 13:11:30 | INFO | data_loader | Loading SPY data from cache: C:\Users\tw_strat\RDMA_2\data_storage\SPY_processed.csv
+2026-03-13 13:11:31 | INFO | data_loader | Loading SPY data from cache: C:\Users\tw_strat\RDMA_2\data_storage\SPY_processed.csv
+2026-03-13 13:11:32 | INFO | data_loader | Loading SPY data from cache: C:\Users\tw_strat\RDMA_2\data_storage\SPY_processed.csv
+2026-03-13 13:11:32 | INFO | data_loader | Loading SPY data from cache: C:\Users\tw_strat\RDMA_2\data_storage\SPY_processed.csv
+2026-03-13 13:11:33 | INFO | data_loader | Loading SPY data from cache: C:\Users\tw_strat\RDMA_2\data_storage\SPY_processed.csv
+2026-03-13 13:11:34 | INFO | data_loader | Loading SPY data from cache: C:\Users\tw_strat\RDMA_2\data_storage\SPY_processed.csv
+2026-03-13 13:11:35 | INFO | data_loader | Loading SPY data from cache: C:\Users\tw_strat\RDMA_2\data_storage\SPY_processed.csv
+2026-03-13 13:11:36 | INFO | data_loader | Loading SPY data from cache: C:\Users\tw_strat\RDMA_2\data_storage\SPY_processed.csv
+2026-03-13 13:11:36 | INFO | data_loader | Loading SPY data from cache: C:\Users\tw_strat\RDMA_2\data_storage\SPY_processed.csv
+2026-03-13 13:11:37 | INFO | data_loader | Loading SPY data from cache: C:\Users\tw_strat\RDMA_2\data_storage\SPY_processed.csv
+2026-03-13 13:11:38 | INFO | data_loader | Loading SPY data from cache: C:\Users\tw_strat\RDMA_2\data_storage\SPY_processed.csv
+2026-03-13 13:11:39 | INFO | data_loader | Loading SPY data from cache: C:\Users\tw_strat\RDMA_2\data_storage\SPY_processed.csv
+2026-03-13 13:11:40 | INFO | data_loader | Loading SPY data from cache: C:\Users\tw_strat\RDMA_2\data_storage\SPY_processed.csv
+2026-03-13 13:11:40 | INFO | data_loader | Loading SPY data from cache: C:\Users\tw_strat\RDMA_2\data_storage\SPY_processed.csv
+2026-03-13 13:11:41 | INFO | data_loader | Loading SPY data from cache: C:\Users\tw_strat\RDMA_2\data_storage\SPY_processed.csv
+2026-03-13 13:11:42 | INFO | data_loader | Loading SPY data from cache: C:\Users\tw_strat\RDMA_2\data_storage\SPY_processed.csv
+2026-03-13 13:11:43 | INFO | data_loader | Loading SPY data from cache: C:\Users\tw_strat\RDMA_2\data_storage\SPY_processed.csv
+2026-03-13 13:11:43 | INFO | data_loader | Loading SPY data from cache: C:\Users\tw_strat\RDMA_2\data_storage\SPY_processed.csv
+2026-03-13 13:11:44 | INFO | data_loader | Loading SPY data from cache: C:\Users\tw_strat\RDMA_2\data_storage\SPY_processed.csv
+2026-03-13 13:11:45 | INFO | data_loader | Loading SPY data from cache: C:\Users\tw_strat\RDMA_2\data_storage\SPY_processed.csv
+2026-03-13 13:11:46 | INFO | data_loader | Downloading GLD data from Yahoo Finance (2000-01-01 to 2025-01-01)...
+2026-03-13 13:11:47 | INFO | data_loader | Calculating Volatility and Regime Features...
+2026-03-13 13:11:47 | INFO | data_loader | Dropped 199 rows due to rolling window initialization.
+2026-03-13 13:11:47 | INFO | data_loader | Saved processed data to C:\Users\tw_strat\RDMA_2\data_storage\GLD_processed.csv
+2026-03-13 13:11:48 | INFO | data_loader | Loading GLD data from cache: C:\Users\tw_strat\RDMA_2\data_storage\GLD_processed.csv
+2026-03-13 13:11:49 | INFO | data_loader | Loading GLD data from cache: C:\Users\tw_strat\RDMA_2\data_storage\GLD_processed.csv
+2026-03-13 13:11:49 | INFO | data_loader | Loading GLD data from cache: C:\Users\tw_strat\RDMA_2\data_storage\GLD_processed.csv
+2026-03-13 13:11:50 | INFO | data_loader | Loading GLD data from cache: C:\Users\tw_strat\RDMA_2\data_storage\GLD_processed.csv
+2026-03-13 13:11:50 | INFO | data_loader | Loading GLD data from cache: C:\Users\tw_strat\RDMA_2\data_storage\GLD_processed.csv
+2026-03-13 13:11:51 | INFO | data_loader | Loading GLD data from cache: C:\Users\tw_strat\RDMA_2\data_storage\GLD_processed.csv
+2026-03-13 13:11:52 | INFO | data_loader | Loading GLD data from cache: C:\Users\tw_strat\RDMA_2\data_storage\GLD_processed.csv
+2026-03-13 13:11:52 | INFO | data_loader | Loading GLD data from cache: C:\Users\tw_strat\RDMA_2\data_storage\GLD_processed.csv
+2026-03-13 13:11:53 | INFO | data_loader | Loading GLD data from cache: C:\Users\tw_strat\RDMA_2\data_storage\GLD_processed.csv
+2026-03-13 13:11:54 | INFO | data_loader | Loading GLD data from cache: C:\Users\tw_strat\RDMA_2\data_storage\GLD_processed.csv
+2026-03-13 13:11:54 | INFO | data_loader | Loading GLD data from cache: C:\Users\tw_strat\RDMA_2\data_storage\GLD_processed.csv
+2026-03-13 13:11:55 | INFO | data_loader | Loading GLD data from cache: C:\Users\tw_strat\RDMA_2\data_storage\GLD_processed.csv
+2026-03-13 13:11:55 | INFO | data_loader | Loading GLD data from cache: C:\Users\tw_strat\RDMA_2\data_storage\GLD_processed.csv
+2026-03-13 13:11:56 | INFO | data_loader | Loading GLD data from cache: C:\Users\tw_strat\RDMA_2\data_storage\GLD_processed.csv
+2026-03-13 13:11:57 | INFO | data_loader | Loading GLD data from cache: C:\Users\tw_strat\RDMA_2\data_storage\GLD_processed.csv
+2026-03-13 13:11:58 | INFO | data_loader | Loading GLD data from cache: C:\Users\tw_strat\RDMA_2\data_storage\GLD_processed.csv
+2026-03-13 13:11:58 | INFO | data_loader | Loading GLD data from cache: C:\Users\tw_strat\RDMA_2\data_storage\GLD_processed.csv
+2026-03-13 13:11:59 | INFO | data_loader | Loading GLD data from cache: C:\Users\tw_strat\RDMA_2\data_storage\GLD_processed.csv
+2026-03-13 13:11:59 | INFO | data_loader | Loading GLD data from cache: C:\Users\tw_strat\RDMA_2\data_storage\GLD_processed.csv
+2026-03-13 13:12:00 | INFO | data_loader | Loading GLD data from cache: C:\Users\tw_strat\RDMA_2\data_storage\GLD_processed.csv
+2026-03-13 13:12:00 | INFO | data_loader | Loading GLD data from cache: C:\Users\tw_strat\RDMA_2\data_storage\GLD_processed.csv
+2026-03-13 13:12:01 | INFO | data_loader | Loading GLD data from cache: C:\Users\tw_strat\RDMA_2\data_storage\GLD_processed.csv
+2026-03-13 13:12:02 | INFO | data_loader | Loading GLD data from cache: C:\Users\tw_strat\RDMA_2\data_storage\GLD_processed.csv
+2026-03-13 13:12:03 | INFO | data_loader | Downloading BTC-USD data from Yahoo Finance (2000-01-01 to 2025-01-01)...
+2026-03-13 13:12:03 | INFO | data_loader | Calculating Volatility and Regime Features...
+2026-03-13 13:12:03 | INFO | data_loader | Dropped 199 rows due to rolling window initialization.
+2026-03-13 13:12:03 | INFO | data_loader | Saved processed data to C:\Users\tw_strat\RDMA_2\data_storage\BTC-USD_processed.csv
+2026-03-13 13:12:04 | INFO | data_loader | Loading BTC-USD data from cache: C:\Users\tw_strat\RDMA_2\data_storage\BTC-USD_processed.csv
+2026-03-13 13:12:04 | INFO | data_loader | Loading BTC-USD data from cache: C:\Users\tw_strat\RDMA_2\data_storage\BTC-USD_processed.csv
+2026-03-13 13:12:05 | INFO | data_loader | Loading BTC-USD data from cache: C:\Users\tw_strat\RDMA_2\data_storage\BTC-USD_processed.csv
+2026-03-13 13:12:05 | INFO | data_loader | Loading BTC-USD data from cache: C:\Users\tw_strat\RDMA_2\data_storage\BTC-USD_processed.csv
+2026-03-13 13:12:06 | INFO | data_loader | Loading BTC-USD data from cache: C:\Users\tw_strat\RDMA_2\data_storage\BTC-USD_processed.csv
+2026-03-13 13:12:06 | INFO | data_loader | Loading BTC-USD data from cache: C:\Users\tw_strat\RDMA_2\data_storage\BTC-USD_processed.csv
+2026-03-13 13:12:07 | INFO | data_loader | Loading BTC-USD data from cache: C:\Users\tw_strat\RDMA_2\data_storage\BTC-USD_processed.csv
+2026-03-13 13:12:08 | INFO | data_loader | Loading BTC-USD data from cache: C:\Users\tw_strat\RDMA_2\data_storage\BTC-USD_processed.csv
+2026-03-13 13:12:08 | INFO | data_loader | Loading BTC-USD data from cache: C:\Users\tw_strat\RDMA_2\data_storage\BTC-USD_processed.csv
+2026-03-13 13:12:08 | INFO | data_loader | Loading BTC-USD data from cache: C:\Users\tw_strat\RDMA_2\data_storage\BTC-USD_processed.csv
+2026-03-13 13:12:09 | INFO | data_loader | Loading BTC-USD data from cache: C:\Users\tw_strat\RDMA_2\data_storage\BTC-USD_processed.csv
+2026-03-13 13:12:10 | INFO | data_loader | Loading BTC-USD data from cache: C:\Users\tw_strat\RDMA_2\data_storage\BTC-USD_processed.csv
+2026-03-13 13:12:10 | INFO | data_loader | Loading BTC-USD data from cache: C:\Users\tw_strat\RDMA_2\data_storage\BTC-USD_processed.csv
+2026-03-13 13:12:11 | INFO | data_loader | Loading BTC-USD data from cache: C:\Users\tw_strat\RDMA_2\data_storage\BTC-USD_processed.csv
+2026-03-13 13:12:11 | INFO | data_loader | Loading BTC-USD data from cache: C:\Users\tw_strat\RDMA_2\data_storage\BTC-USD_processed.csv
+2026-03-13 13:12:12 | INFO | data_loader | Loading BTC-USD data from cache: C:\Users\tw_strat\RDMA_2\data_storage\BTC-USD_processed.csv
+2026-03-13 13:12:12 | INFO | data_loader | Loading BTC-USD data from cache: C:\Users\tw_strat\RDMA_2\data_storage\BTC-USD_processed.csv
+2026-03-13 13:12:13 | INFO | data_loader | Loading BTC-USD data from cache: C:\Users\tw_strat\RDMA_2\data_storage\BTC-USD_processed.csv
+2026-03-13 13:12:13 | INFO | data_loader | Loading BTC-USD data from cache: C:\Users\tw_strat\RDMA_2\data_storage\BTC-USD_processed.csv
+2026-03-13 13:12:14 | INFO | data_loader | Loading BTC-USD data from cache: C:\Users\tw_strat\RDMA_2\data_storage\BTC-USD_processed.csv
+2026-03-13 13:12:14 | INFO | data_loader | Loading BTC-USD data from cache: C:\Users\tw_strat\RDMA_2\data_storage\BTC-USD_processed.csv
+2026-03-13 13:12:15 | INFO | data_loader | Loading BTC-USD data from cache: C:\Users\tw_strat\RDMA_2\data_storage\BTC-USD_processed.csv
+2026-03-13 13:12:15 | INFO | data_loader | Loading BTC-USD data from cache: C:\Users\tw_strat\RDMA_2\data_storage\BTC-USD_processed.csv
+2026-03-13 13:12:16 | INFO | data_loader | Downloading EURUSD=X data from Yahoo Finance (2000-01-01 to 2025-01-01)...
+2026-03-13 13:12:17 | INFO | data_loader | Calculating Volatility and Regime Features...
+2026-03-13 13:12:17 | INFO | data_loader | Dropped 199 rows due to rolling window initialization.
+2026-03-13 13:12:17 | INFO | data_loader | Saved processed data to C:\Users\tw_strat\RDMA_2\data_storage\EURUSD=X_processed.csv
+2026-03-13 13:12:17 | INFO | data_loader | Loading EURUSD=X data from cache: C:\Users\tw_strat\RDMA_2\data_storage\EURUSD=X_processed.csv
+2026-03-13 13:12:18 | INFO | data_loader | Loading EURUSD=X data from cache: C:\Users\tw_strat\RDMA_2\data_storage\EURUSD=X_processed.csv
+2026-03-13 13:12:19 | INFO | data_loader | Loading EURUSD=X data from cache: C:\Users\tw_strat\RDMA_2\data_storage\EURUSD=X_processed.csv
+2026-03-13 13:12:19 | INFO | data_loader | Loading EURUSD=X data from cache: C:\Users\tw_strat\RDMA_2\data_storage\EURUSD=X_processed.csv
+2026-03-13 13:12:20 | INFO | data_loader | Loading EURUSD=X data from cache: C:\Users\tw_strat\RDMA_2\data_storage\EURUSD=X_processed.csv
+2026-03-13 13:12:21 | INFO | data_loader | Loading EURUSD=X data from cache: C:\Users\tw_strat\RDMA_2\data_storage\EURUSD=X_processed.csv
+2026-03-13 13:12:21 | INFO | data_loader | Loading EURUSD=X data from cache: C:\Users\tw_strat\RDMA_2\data_storage\EURUSD=X_processed.csv
+2026-03-13 13:12:22 | INFO | data_loader | Loading EURUSD=X data from cache: C:\Users\tw_strat\RDMA_2\data_storage\EURUSD=X_processed.csv
+2026-03-13 13:12:23 | INFO | data_loader | Loading EURUSD=X data from cache: C:\Users\tw_strat\RDMA_2\data_storage\EURUSD=X_processed.csv
+2026-03-13 13:12:24 | INFO | data_loader | Loading EURUSD=X data from cache: C:\Users\tw_strat\RDMA_2\data_storage\EURUSD=X_processed.csv
+2026-03-13 13:12:24 | INFO | data_loader | Loading EURUSD=X data from cache: C:\Users\tw_strat\RDMA_2\data_storage\EURUSD=X_processed.csv
+2026-03-13 13:12:25 | INFO | data_loader | Loading EURUSD=X data from cache: C:\Users\tw_strat\RDMA_2\data_storage\EURUSD=X_processed.csv
+2026-03-13 13:12:25 | INFO | data_loader | Loading EURUSD=X data from cache: C:\Users\tw_strat\RDMA_2\data_storage\EURUSD=X_processed.csv
+2026-03-13 13:12:26 | INFO | data_loader | Loading EURUSD=X data from cache: C:\Users\tw_strat\RDMA_2\data_storage\EURUSD=X_processed.csv
+2026-03-13 13:12:27 | INFO | data_loader | Loading EURUSD=X data from cache: C:\Users\tw_strat\RDMA_2\data_storage\EURUSD=X_processed.csv
+2026-03-13 13:12:28 | INFO | data_loader | Loading EURUSD=X data from cache: C:\Users\tw_strat\RDMA_2\data_storage\EURUSD=X_processed.csv
+2026-03-13 13:12:28 | INFO | data_loader | Loading EURUSD=X data from cache: C:\Users\tw_strat\RDMA_2\data_storage\EURUSD=X_processed.csv
+2026-03-13 13:12:29 | INFO | data_loader | Loading EURUSD=X data from cache: C:\Users\tw_strat\RDMA_2\data_storage\EURUSD=X_processed.csv
+2026-03-13 13:12:30 | INFO | data_loader | Loading EURUSD=X data from cache: C:\Users\tw_strat\RDMA_2\data_storage\EURUSD=X_processed.csv
+2026-03-13 13:12:31 | INFO | data_loader | Loading EURUSD=X data from cache: C:\Users\tw_strat\RDMA_2\data_storage\EURUSD=X_processed.csv
+2026-03-13 13:12:31 | INFO | data_loader | Loading EURUSD=X data from cache: C:\Users\tw_strat\RDMA_2\data_storage\EURUSD=X_processed.csv
+2026-03-13 13:12:32 | INFO | data_loader | Loading EURUSD=X data from cache: C:\Users\tw_strat\RDMA_2\data_storage\EURUSD=X_processed.csv
+2026-03-13 13:12:33 | INFO | data_loader | Loading EURUSD=X data from cache: C:\Users\tw_strat\RDMA_2\data_storage\EURUSD=X_processed.csv
+2026-03-13 13:15:09 | INFO | data_loader | Loading SPY data from cache: C:\Users\tw_strat\RDMA_2\data_storage\SPY_processed.csv
+2026-03-13 13:15:46 | INFO | data_loader | Loading SPY data from cache: C:\Users\tw_strat\RDMA_2\data_storage\SPY_processed.csv
+2026-03-13 13:15:53 | INFO | data_loader | Loading SPY data from cache: C:\Users\tw_strat\RDMA_2\data_storage\SPY_processed.csv
+2026-03-13 13:16:13 | INFO | data_loader | Loading SPY data from cache: C:\Users\tw_strat\RDMA_2\data_storage\SPY_processed.csv
+2026-03-13 13:16:20 | INFO | data_loader | Loading SPY data from cache: C:\Users\tw_strat\RDMA_2\data_storage\SPY_processed.csv
+2026-03-13 13:17:24 | INFO | data_loader | Loading SPY data from cache: C:\Users\tw_strat\RDMA_2\data_storage\SPY_processed.csv
+2026-03-13 13:17:33 | INFO | data_loader | Loading SPY data from cache: C:\Users\tw_strat\RDMA_2\data_storage\SPY_processed.csv
+2026-03-13 13:17:39 | INFO | data_loader | Loading SPY data from cache: C:\Users\tw_strat\RDMA_2\data_storage\SPY_processed.csv
+2026-03-13 13:17:45 | INFO | data_loader | Loading SPY data from cache: C:\Users\tw_strat\RDMA_2\data_storage\SPY_processed.csv
+2026-03-13 13:17:56 | INFO | data_loader | Loading SPY data from cache: C:\Users\tw_strat\RDMA_2\data_storage\SPY_processed.csv

@@ -40,8 +40,8 @@ class Portfolio:
         else:
             trade_happened = False
 
-        # apply pnl: position exposure * return - trade cost when a trade occurred
-        pnl = signal * day_return - trade_cost
+        # apply pnl: position exposure (held from yesterday) * today's return - trade cost
+        pnl = self.prev_signal * day_return - trade_cost
 
         # update equity
         old_equity = self.cash_equity
